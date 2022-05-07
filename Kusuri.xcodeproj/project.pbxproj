@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D9242E5BA1F485F3B56FA97 /* Pods_Kusuri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8402451325C4E77047BF713 /* Pods_Kusuri.framework */; };
+		601A0789571E53CD4DBD09EC /* Pods_Kusuri_KusuriUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C3DB968E575C9190C2597 /* Pods_Kusuri_KusuriUITests.framework */; };
 		8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5A42826C9180010CE7A /* AppDelegate.swift */; };
 		8676C5A72826C9180010CE7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5A62826C9180010CE7A /* SceneDelegate.swift */; };
 		8676C5A92826C9180010CE7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5A82826C9180010CE7A /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 		8676C5BC2826C91B0010CE7A /* KusuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5BB2826C91B0010CE7A /* KusuriTests.swift */; };
 		8676C5C62826C91B0010CE7A /* KusuriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5C52826C91B0010CE7A /* KusuriUITests.swift */; };
 		8676C5C82826C91B0010CE7A /* KusuriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */; };
+		86821A1D2826D422005ABBDD /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 86821A1C2826D422005ABBDD /* SwiftSoup */; };
+		86821A232826D638005ABBDD /* Siren in Frameworks */ = {isa = PBXBuildFile; productRef = 86821A222826D638005ABBDD /* Siren */; };
+		B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		080990E516D7EFAE9136EDAD /* Pods-Kusuri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri/Pods-Kusuri.debug.xcconfig"; sourceTree = "<group>"; };
+		643871CD3284E426CBA872F3 /* Pods-Kusuri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri.release.xcconfig"; path = "Target Support Files/Pods-Kusuri/Pods-Kusuri.release.xcconfig"; sourceTree = "<group>"; };
+		6C13AABB6EE0F61000709F21 /* Pods-KusuriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KusuriTests.debug.xcconfig"; path = "Target Support Files/Pods-KusuriTests/Pods-KusuriTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C3C3DB968E575C9190C2597 /* Pods_Kusuri_KusuriUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri_KusuriUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE323C47C34F3B1A6EE1954 /* Pods-KusuriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KusuriTests.release.xcconfig"; path = "Target Support Files/Pods-KusuriTests/Pods-KusuriTests.release.xcconfig"; sourceTree = "<group>"; };
 		8676C5A12826C9180010CE7A /* Kusuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kusuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676C5A42826C9180010CE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8676C5A62826C9180010CE7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		8676C5C12826C91B0010CE7A /* KusuriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KusuriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676C5C52826C91B0010CE7A /* KusuriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriUITests.swift; sourceTree = "<group>"; };
 		8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KusuriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8402451325C4E77047BF713 /* Pods_Kusuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB886472EC7CBE977A54FF02 /* Pods-Kusuri-KusuriUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.release.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86821A232826D638005ABBDD /* Siren in Frameworks */,
+				4D9242E5BA1F485F3B56FA97 /* Pods_Kusuri.framework in Frameworks */,
+				86821A1D2826D422005ABBDD /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601A0789571E53CD4DBD09EC /* Pods_Kusuri_KusuriUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				8676C5BA2826C91B0010CE7A /* KusuriTests */,
 				8676C5C42826C91B0010CE7A /* KusuriUITests */,
 				8676C5A22826C9180010CE7A /* Products */,
+				9C2C080F1550107C0B7D7974 /* Pods */,
+				BA5FE01E77AF85A9B75C3072 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +148,29 @@
 			path = KusuriUITests;
 			sourceTree = "<group>";
 		};
+		9C2C080F1550107C0B7D7974 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				080990E516D7EFAE9136EDAD /* Pods-Kusuri.debug.xcconfig */,
+				643871CD3284E426CBA872F3 /* Pods-Kusuri.release.xcconfig */,
+				A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */,
+				FB886472EC7CBE977A54FF02 /* Pods-Kusuri-KusuriUITests.release.xcconfig */,
+				6C13AABB6EE0F61000709F21 /* Pods-KusuriTests.debug.xcconfig */,
+				6CE323C47C34F3B1A6EE1954 /* Pods-KusuriTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA5FE01E77AF85A9B75C3072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8402451325C4E77047BF713 /* Pods_Kusuri.framework */,
+				6C3C3DB968E575C9190C2597 /* Pods_Kusuri_KusuriUITests.framework */,
+				BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +178,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8676C5CB2826C91B0010CE7A /* Build configuration list for PBXNativeTarget "Kusuri" */;
 			buildPhases = (
+				91DFC28C62450BF22D88862B /* [CP] Check Pods Manifest.lock */,
 				8676C59D2826C9180010CE7A /* Sources */,
 				8676C59E2826C9180010CE7A /* Frameworks */,
 				8676C59F2826C9180010CE7A /* Resources */,
+				0AAC9176DB15452FED002F05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Kusuri;
+			packageProductDependencies = (
+				86821A1C2826D422005ABBDD /* SwiftSoup */,
+				86821A222826D638005ABBDD /* Siren */,
+			);
 			productName = Kusuri;
 			productReference = 8676C5A12826C9180010CE7A /* Kusuri.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8676C5CE2826C91B0010CE7A /* Build configuration list for PBXNativeTarget "KusuriTests" */;
 			buildPhases = (
+				5E90E29893F66ABF402CB7C0 /* [CP] Check Pods Manifest.lock */,
 				8676C5B32826C91B0010CE7A /* Sources */,
 				8676C5B42826C91B0010CE7A /* Frameworks */,
 				8676C5B52826C91B0010CE7A /* Resources */,
@@ -169,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8676C5D12826C91B0010CE7A /* Build configuration list for PBXNativeTarget "KusuriUITests" */;
 			buildPhases = (
+				AF3AD6303451C567571395E2 /* [CP] Check Pods Manifest.lock */,
 				8676C5BD2826C91B0010CE7A /* Sources */,
 				8676C5BE2826C91B0010CE7A /* Frameworks */,
 				8676C5BF2826C91B0010CE7A /* Resources */,
+				4EDDA891AA39A3D94A205C78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +268,13 @@
 				Base,
 			);
 			mainGroup = 8676C5982826C9180010CE7A;
+			packageReferences = (
+				86821A1B2826D422005ABBDD /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				86821A1E2826D53D005ABBDD /* XCRemoteSwiftPackageReference "RxSwift" */,
+				86821A1F2826D5B1005ABBDD /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				86821A202826D5F7005ABBDD /* XCRemoteSwiftPackageReference "SnapKit" */,
+				86821A212826D638005ABBDD /* XCRemoteSwiftPackageReference "Siren" */,
+			);
 			productRefGroup = 8676C5A22826C9180010CE7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,6 +312,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AAC9176DB15452FED002F05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusuri/Pods-Kusuri-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusuri/Pods-Kusuri-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kusuri/Pods-Kusuri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EDDA891AA39A3D94A205C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E90E29893F66ABF402CB7C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KusuriTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DFC28C62450BF22D88862B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kusuri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF3AD6303451C567571395E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kusuri-KusuriUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8676C59D2826C9180010CE7A /* Sources */ = {
@@ -434,6 +597,7 @@
 		};
 		8676C5CC2826C91B0010CE7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080990E516D7EFAE9136EDAD /* Pods-Kusuri.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -467,6 +631,7 @@
 		};
 		8676C5CD2826C91B0010CE7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643871CD3284E426CBA872F3 /* Pods-Kusuri.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,6 +665,7 @@
 		};
 		8676C5CF2826C91B0010CE7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C13AABB6EE0F61000709F21 /* Pods-KusuriTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +686,7 @@
 		};
 		8676C5D02826C91B0010CE7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE323C47C34F3B1A6EE1954 /* Pods-KusuriTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +707,7 @@
 		};
 		8676C5D22826C91B0010CE7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +726,7 @@
 		};
 		8676C5D32826C91B0010CE7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB886472EC7CBE977A54FF02 /* Pods-Kusuri-KusuriUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -614,6 +783,62 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86821A1B2826D422005ABBDD /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		86821A1E2826D53D005ABBDD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		86821A1F2826D5B1005ABBDD /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		86821A202826D5F7005ABBDD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		86821A212826D638005ABBDD /* XCRemoteSwiftPackageReference "Siren" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ArtSabintsev/Siren.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86821A1C2826D422005ABBDD /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86821A1B2826D422005ABBDD /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		86821A222826D638005ABBDD /* Siren */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86821A212826D638005ABBDD /* XCRemoteSwiftPackageReference "Siren" */;
+			productName = Siren;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8676C5992826C9180010CE7A /* Project object */;
 }
