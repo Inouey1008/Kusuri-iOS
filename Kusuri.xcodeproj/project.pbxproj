@@ -15,8 +15,6 @@
 		8676C5BC2826C91B0010CE7A /* KusuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5BB2826C91B0010CE7A /* KusuriTests.swift */; };
 		8676C5C62826C91B0010CE7A /* KusuriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5C52826C91B0010CE7A /* KusuriUITests.swift */; };
 		8676C5C82826C91B0010CE7A /* KusuriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */; };
-		86821A1D2826D422005ABBDD /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 86821A1C2826D422005ABBDD /* SwiftSoup */; };
-		86821A232826D638005ABBDD /* Siren in Frameworks */ = {isa = PBXBuildFile; productRef = 86821A222826D638005ABBDD /* Siren */; };
 		86821A262826DA50005ABBDD /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 86821A252826DA50005ABBDD /* Font */; };
 		86821A382826DCC6005ABBDD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2C2826DC8E005ABBDD /* Date.swift */; };
 		86821A392826DCC6005ABBDD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2D2826DC8E005ABBDD /* UIColor.swift */; };
@@ -29,6 +27,11 @@
 		86821A402826DCC6005ABBDD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A342826DC8E005ABBDD /* UIImage.swift */; };
 		86821A412826DCC6005ABBDD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A352826DC8E005ABBDD /* UIFont.swift */; };
 		86821A422826DCC6005ABBDD /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A362826DC8E005ABBDD /* UIControl.swift */; };
+		86BC56D02826EC1A00A58841 /* Siren in Frameworks */ = {isa = PBXBuildFile; productRef = 86BC56CF2826EC1A00A58841 /* Siren */; };
+		86BC56D72826EE0B00A58841 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 86BC56D62826EE0B00A58841 /* Alamofire */; };
+		86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */; };
+		86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DB2826EEC600A58841 /* MainTabViewController.swift */; };
+		86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DC2826EEC600A58841 /* MainTabRouter.swift */; };
 		B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,9 @@
 		86821A342826DC8E005ABBDD /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		86821A352826DC8E005ABBDD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		86821A362826DC8E005ABBDD /* UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
+		86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		86BC56DB2826EEC600A58841 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		86BC56DC2826EEC600A58841 /* MainTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabRouter.swift; sourceTree = "<group>"; };
 		A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KusuriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8402451325C4E77047BF713 /* Pods_Kusuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,9 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86821A232826D638005ABBDD /* Siren in Frameworks */,
+				86BC56D72826EE0B00A58841 /* Alamofire in Frameworks */,
+				86BC56D02826EC1A00A58841 /* Siren in Frameworks */,
 				4D9242E5BA1F485F3B56FA97 /* Pods_Kusuri.framework in Frameworks */,
-				86821A1D2826D422005ABBDD /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +146,7 @@
 			children = (
 				8676C5AF2826C91A0010CE7A /* LaunchScreen.storyboard */,
 				8676C5A42826C9180010CE7A /* AppDelegate.swift */,
+				86BC56D82826EE6E00A58841 /* UI */,
 				86821A242826D9F8005ABBDD /* Resource */,
 				86821A372826DC8E005ABBDD /* Util */,
 			);
@@ -192,6 +199,24 @@
 			path = "/Users/yusukeinoue/Develop/Kusuri-iOS/Kusuri/Util";
 			sourceTree = "<absolute>";
 		};
+		86BC56D82826EE6E00A58841 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				86BC56D92826EEC600A58841 /* MainTab */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		86BC56D92826EEC600A58841 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				86BC56DB2826EEC600A58841 /* MainTabViewController.swift */,
+				86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */,
+				86BC56DC2826EEC600A58841 /* MainTabRouter.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
 		9C2C080F1550107C0B7D7974 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,8 +259,8 @@
 			);
 			name = Kusuri;
 			packageProductDependencies = (
-				86821A1C2826D422005ABBDD /* SwiftSoup */,
-				86821A222826D638005ABBDD /* Siren */,
+				86BC56CF2826EC1A00A58841 /* Siren */,
+				86BC56D62826EE0B00A58841 /* Alamofire */,
 			);
 			productName = Kusuri;
 			productReference = 8676C5A12826C9180010CE7A /* Kusuri.app */;
@@ -313,11 +338,10 @@
 			);
 			mainGroup = 8676C5982826C9180010CE7A;
 			packageReferences = (
-				86821A1B2826D422005ABBDD /* XCRemoteSwiftPackageReference "SwiftSoup" */,
-				86821A1E2826D53D005ABBDD /* XCRemoteSwiftPackageReference "RxSwift" */,
-				86821A1F2826D5B1005ABBDD /* XCRemoteSwiftPackageReference "RxDataSources" */,
-				86821A202826D5F7005ABBDD /* XCRemoteSwiftPackageReference "SnapKit" */,
-				86821A212826D638005ABBDD /* XCRemoteSwiftPackageReference "Siren" */,
+				86BC56CE2826EC1A00A58841 /* XCRemoteSwiftPackageReference "Siren" */,
+				86BC56D22826ED9800A58841 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				86BC56D42826EDEC00A58841 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				86BC56D52826EE0B00A58841 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 8676C5A22826C9180010CE7A /* Products */;
 			projectDirPath = "";
@@ -470,13 +494,16 @@
 				86821A3A2826DCC6005ABBDD /* NSObject.swift in Sources */,
 				86821A3B2826DCC6005ABBDD /* ActivityIndicator.swift in Sources */,
 				86821A3C2826DCC6005ABBDD /* UIDevice.swift in Sources */,
+				86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */,
 				86821A3D2826DCC6005ABBDD /* UITextField.swift in Sources */,
 				86821A3E2826DCC6005ABBDD /* UITableViewCell.swift in Sources */,
 				86821A3F2826DCC6005ABBDD /* String.swift in Sources */,
 				86821A402826DCC6005ABBDD /* UIImage.swift in Sources */,
+				86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */,
 				86821A412826DCC6005ABBDD /* UIFont.swift in Sources */,
 				86821A422826DCC6005ABBDD /* UIControl.swift in Sources */,
 				8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */,
+				86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +679,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X399MB9G5U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Kusuri/Info.plist;
+				INFOPLIST_FILE = Kusuri/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "添付文書";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -686,7 +713,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X399MB9G5U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Kusuri/Info.plist;
+				INFOPLIST_FILE = Kusuri/Resource/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "添付文書";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -830,39 +857,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		86821A1B2826D422005ABBDD /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		86821A1E2826D53D005ABBDD /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		86821A1F2826D5B1005ABBDD /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		86821A202826D5F7005ABBDD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		86821A212826D638005ABBDD /* XCRemoteSwiftPackageReference "Siren" */ = {
+		86BC56CE2826EC1A00A58841 /* XCRemoteSwiftPackageReference "Siren" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ArtSabintsev/Siren.git";
 			requirement = {
@@ -870,18 +865,42 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		86BC56D22826ED9800A58841 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		86BC56D42826EDEC00A58841 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		86BC56D52826EE0B00A58841 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86821A1C2826D422005ABBDD /* SwiftSoup */ = {
+		86BC56CF2826EC1A00A58841 /* Siren */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 86821A1B2826D422005ABBDD /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-		86821A222826D638005ABBDD /* Siren */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86821A212826D638005ABBDD /* XCRemoteSwiftPackageReference "Siren" */;
+			package = 86BC56CE2826EC1A00A58841 /* XCRemoteSwiftPackageReference "Siren" */;
 			productName = Siren;
+		};
+		86BC56D62826EE0B00A58841 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86BC56D52826EE0B00A58841 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
