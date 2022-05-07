@@ -10,7 +10,6 @@
 		4D9242E5BA1F485F3B56FA97 /* Pods_Kusuri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8402451325C4E77047BF713 /* Pods_Kusuri.framework */; };
 		601A0789571E53CD4DBD09EC /* Pods_Kusuri_KusuriUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C3DB968E575C9190C2597 /* Pods_Kusuri_KusuriUITests.framework */; };
 		8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5A42826C9180010CE7A /* AppDelegate.swift */; };
-		8676C5A92826C9180010CE7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5A82826C9180010CE7A /* ViewController.swift */; };
 		8676C5AE2826C91A0010CE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8676C5AD2826C91A0010CE7A /* Assets.xcassets */; };
 		8676C5B12826C91A0010CE7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8676C5AF2826C91A0010CE7A /* LaunchScreen.storyboard */; };
 		8676C5BC2826C91B0010CE7A /* KusuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5BB2826C91B0010CE7A /* KusuriTests.swift */; };
@@ -19,6 +18,17 @@
 		86821A1D2826D422005ABBDD /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 86821A1C2826D422005ABBDD /* SwiftSoup */; };
 		86821A232826D638005ABBDD /* Siren in Frameworks */ = {isa = PBXBuildFile; productRef = 86821A222826D638005ABBDD /* Siren */; };
 		86821A262826DA50005ABBDD /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 86821A252826DA50005ABBDD /* Font */; };
+		86821A382826DCC6005ABBDD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2C2826DC8E005ABBDD /* Date.swift */; };
+		86821A392826DCC6005ABBDD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2D2826DC8E005ABBDD /* UIColor.swift */; };
+		86821A3A2826DCC6005ABBDD /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2E2826DC8E005ABBDD /* NSObject.swift */; };
+		86821A3B2826DCC6005ABBDD /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */; };
+		86821A3C2826DCC6005ABBDD /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A302826DC8E005ABBDD /* UIDevice.swift */; };
+		86821A3D2826DCC6005ABBDD /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A312826DC8E005ABBDD /* UITextField.swift */; };
+		86821A3E2826DCC6005ABBDD /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A322826DC8E005ABBDD /* UITableViewCell.swift */; };
+		86821A3F2826DCC6005ABBDD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A332826DC8E005ABBDD /* String.swift */; };
+		86821A402826DCC6005ABBDD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A342826DC8E005ABBDD /* UIImage.swift */; };
+		86821A412826DCC6005ABBDD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A352826DC8E005ABBDD /* UIFont.swift */; };
+		86821A422826DCC6005ABBDD /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A362826DC8E005ABBDD /* UIControl.swift */; };
 		B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +57,6 @@
 		6CE323C47C34F3B1A6EE1954 /* Pods-KusuriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KusuriTests.release.xcconfig"; path = "Target Support Files/Pods-KusuriTests/Pods-KusuriTests.release.xcconfig"; sourceTree = "<group>"; };
 		8676C5A12826C9180010CE7A /* Kusuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kusuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676C5A42826C9180010CE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8676C5A82826C9180010CE7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8676C5AD2826C91A0010CE7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8676C5B02826C91A0010CE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8676C5B22826C91A0010CE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +66,17 @@
 		8676C5C52826C91B0010CE7A /* KusuriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriUITests.swift; sourceTree = "<group>"; };
 		8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		86821A252826DA50005ABBDD /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
+		86821A2C2826DC8E005ABBDD /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		86821A2D2826DC8E005ABBDD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		86821A2E2826DC8E005ABBDD /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		86821A302826DC8E005ABBDD /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		86821A312826DC8E005ABBDD /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		86821A322826DC8E005ABBDD /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		86821A332826DC8E005ABBDD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		86821A342826DC8E005ABBDD /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		86821A352826DC8E005ABBDD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		86821A362826DC8E005ABBDD /* UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
 		A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KusuriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8402451325C4E77047BF713 /* Pods_Kusuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,10 +138,10 @@
 		8676C5A32826C9180010CE7A /* Kusuri */ = {
 			isa = PBXGroup;
 			children = (
-				8676C5A42826C9180010CE7A /* AppDelegate.swift */,
-				8676C5A82826C9180010CE7A /* ViewController.swift */,
 				8676C5AF2826C91A0010CE7A /* LaunchScreen.storyboard */,
+				8676C5A42826C9180010CE7A /* AppDelegate.swift */,
 				86821A242826D9F8005ABBDD /* Resource */,
+				86821A372826DC8E005ABBDD /* Util */,
 			);
 			path = Kusuri;
 			sourceTree = "<group>";
@@ -152,6 +172,25 @@
 			);
 			path = Resource;
 			sourceTree = "<group>";
+		};
+		86821A372826DC8E005ABBDD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				86821A2C2826DC8E005ABBDD /* Date.swift */,
+				86821A2D2826DC8E005ABBDD /* UIColor.swift */,
+				86821A2E2826DC8E005ABBDD /* NSObject.swift */,
+				86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */,
+				86821A302826DC8E005ABBDD /* UIDevice.swift */,
+				86821A312826DC8E005ABBDD /* UITextField.swift */,
+				86821A322826DC8E005ABBDD /* UITableViewCell.swift */,
+				86821A332826DC8E005ABBDD /* String.swift */,
+				86821A342826DC8E005ABBDD /* UIImage.swift */,
+				86821A352826DC8E005ABBDD /* UIFont.swift */,
+				86821A362826DC8E005ABBDD /* UIControl.swift */,
+			);
+			name = Util;
+			path = "/Users/yusukeinoue/Develop/Kusuri-iOS/Kusuri/Util";
+			sourceTree = "<absolute>";
 		};
 		9C2C080F1550107C0B7D7974 /* Pods */ = {
 			isa = PBXGroup;
@@ -426,7 +465,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8676C5A92826C9180010CE7A /* ViewController.swift in Sources */,
+				86821A382826DCC6005ABBDD /* Date.swift in Sources */,
+				86821A392826DCC6005ABBDD /* UIColor.swift in Sources */,
+				86821A3A2826DCC6005ABBDD /* NSObject.swift in Sources */,
+				86821A3B2826DCC6005ABBDD /* ActivityIndicator.swift in Sources */,
+				86821A3C2826DCC6005ABBDD /* UIDevice.swift in Sources */,
+				86821A3D2826DCC6005ABBDD /* UITextField.swift in Sources */,
+				86821A3E2826DCC6005ABBDD /* UITableViewCell.swift in Sources */,
+				86821A3F2826DCC6005ABBDD /* String.swift in Sources */,
+				86821A402826DCC6005ABBDD /* UIImage.swift in Sources */,
+				86821A412826DCC6005ABBDD /* UIFont.swift in Sources */,
+				86821A422826DCC6005ABBDD /* UIControl.swift in Sources */,
 				8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

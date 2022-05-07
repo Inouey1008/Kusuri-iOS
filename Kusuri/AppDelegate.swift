@@ -64,18 +64,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appearance.shadowColor = .clear
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().backgroundColor = .primary
+        UINavigationBar.appearance().barTintColor = .primary
         UINavigationBar.appearance().backgroundColor = .white
-        UINavigationBar.appearance().barTintColor = .white
-        UINavigationBar.appearance().backgroundColor = .white
-        UINavigationBar.appearance().barTintColor = .white
-        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().barTintColor = .backgroundCover
+        UINavigationBar.appearance().tintColor = .primary
     }
     
     private func setupTabBar() {
         UITabBar.appearance().shadowImage = UIImage()
         UITabBar.appearance().backgroundImage = UIImage()
-        UITabBar.appearance().backgroundColor = .white
-        UITabBar.appearance().tintColor = .white
+        UITabBar.appearance().backgroundColor = .backgroundBase
+        UITabBar.appearance().tintColor = .primary
         UITabBar.appearance().unselectedItemTintColor = .gray
     }
     
