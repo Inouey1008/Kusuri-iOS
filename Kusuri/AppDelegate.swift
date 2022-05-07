@@ -6,31 +6,93 @@
 //
 
 import UIKit
+import Siren
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
 
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_: UIApplication, willFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+        print("Application will finish launching")
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        print("Application did finish launching")
+        setupVersionUpdateNotification()
+        setupNavigationBar()
+        setupTabBar()
+        setupWindow()
+        IQKeyboardManager.shared.enable = true
+        return true
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("Application did become active")
     }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    func applicationWillResignActive(_ application: UIApplication) {
+        print("Application will resign active")
     }
 
+    func applicationWillEnterForeground(_: UIApplication) {
+        print("Application will enter foreground")
+    }
 
+    func applicationDidEnterBackground(_: UIApplication) {
+        print("Application did enter background")
+    }
+
+    func applicationWillTerminate(_: UIApplication) {
+        print("Application will terminate")
+    }
+
+    func applicationDidFinishLaunching(_: UIApplication) {
+        print("Application did finish launching")
+    }
+
+    func applicationDidReceiveMemoryWarning(_: UIApplication) {
+        print("Applicationd did receive memory warning")
+    }
+    
+    private func setupNavigationBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+        appearance.shadowImage = UIImage()
+        appearance.shadowColor = .clear
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().backgroundColor = .white
+        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().backgroundColor = .white
+        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().tintColor = .white
+    }
+    
+    private func setupTabBar() {
+        UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage()
+        UITabBar.appearance().backgroundColor = .white
+        UITabBar.appearance().tintColor = .white
+        UITabBar.appearance().unselectedItemTintColor = .gray
+    }
+    
+    private func setupWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UIViewController()
+        window?.makeKeyAndVisible()
+    }
+    
+    private func setupVersionUpdateNotification() {
+        Siren.shared.rulesManager = RulesManager(
+            majorUpdateRules: Rules(promptFrequency: .immediately, forAlertType: .force),
+            minorUpdateRules: Rules(promptFrequency: .immediately, forAlertType: .option),
+            patchUpdateRules: Rules(promptFrequency: .immediately, forAlertType: .skip)
+        )
+        Siren.shared.presentationManager = PresentationManager(forceLanguageLocalization: .japanese)
+        Siren.shared.apiManager = APIManager(country: .japan)
+        Siren.shared.wail()
+    }
 }
-
