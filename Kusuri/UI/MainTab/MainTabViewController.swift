@@ -26,10 +26,9 @@ final class MainTabViewController: UITabBarController {
 //            あとで直す！！
 //            SearchPagerTabRouter.generate(),
 //            BarcodeReadRouter.generate(),
-//            MenuRouter.generate()
             UIViewController(),
             UIViewController(),
-            UIViewController(),
+            MenuRouter.generate()
         ], animated: false)
     }
 }

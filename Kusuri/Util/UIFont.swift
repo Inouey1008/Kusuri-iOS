@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIFont {
-    
     static let largeSize: CGFloat = UIDevice.current.separateValue(forPad: 30, forPhone: 20)
     static let mediumSize: CGFloat = UIDevice.current.separateValue(forPad: 25, forPhone: 16)
     static let smallSize: CGFloat = UIDevice.current.separateValue(forPad: 20, forPhone: 12)
@@ -50,14 +49,14 @@ extension UIFont {
     }
     
     static func BoldFont(size: CGFloat) -> UIFont {
-        return UIFont(name: "NotoSansJP-Bold", size: size) ?? .systemFont(ofSize: size)
+        return UIFont(name: "NotoSansJP-Bold", size: size)!
     }
     
     static func RegularFont(size: CGFloat) -> UIFont {
-        return UIFont(name: "NotoSansJP-Regular", size: size) ?? .systemFont(ofSize: size)
+        return UIFont(name: "NotoSansJP-Regular", size: size)!
     }
     
     static func LightFont(size: CGFloat) -> UIFont {
-        return UIFont(name: "NotoSansJP-Light", size: size) ?? .systemFont(ofSize: size)
+        return UIFont(name: "NotoSansJP-Light", size: size)!
     }
 }

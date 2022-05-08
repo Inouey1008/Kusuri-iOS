@@ -15,7 +15,6 @@
 		8676C5BC2826C91B0010CE7A /* KusuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5BB2826C91B0010CE7A /* KusuriTests.swift */; };
 		8676C5C62826C91B0010CE7A /* KusuriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5C52826C91B0010CE7A /* KusuriUITests.swift */; };
 		8676C5C82826C91B0010CE7A /* KusuriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */; };
-		86821A262826DA50005ABBDD /* Font in Resources */ = {isa = PBXBuildFile; fileRef = 86821A252826DA50005ABBDD /* Font */; };
 		86821A382826DCC6005ABBDD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2C2826DC8E005ABBDD /* Date.swift */; };
 		86821A392826DCC6005ABBDD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2D2826DC8E005ABBDD /* UIColor.swift */; };
 		86821A3A2826DCC6005ABBDD /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2E2826DC8E005ABBDD /* NSObject.swift */; };
@@ -27,11 +26,21 @@
 		86821A402826DCC6005ABBDD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A342826DC8E005ABBDD /* UIImage.swift */; };
 		86821A412826DCC6005ABBDD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A352826DC8E005ABBDD /* UIFont.swift */; };
 		86821A422826DCC6005ABBDD /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A362826DC8E005ABBDD /* UIControl.swift */; };
-		86BC56D02826EC1A00A58841 /* Siren in Frameworks */ = {isa = PBXBuildFile; productRef = 86BC56CF2826EC1A00A58841 /* Siren */; };
-		86BC56D72826EE0B00A58841 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 86BC56D62826EE0B00A58841 /* Alamofire */; };
+		868D416A2827A9B60045702A /* NotoSansJP-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41652827A9B60045702A /* NotoSansJP-Regular.otf */; };
+		868D416B2827A9B60045702A /* NotoSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41662827A9B60045702A /* NotoSansJP-Light.otf */; };
+		868D416C2827A9B60045702A /* NotoSansJP-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41672827A9B60045702A /* NotoSansJP-Bold.otf */; };
 		86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */; };
 		86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DB2826EEC600A58841 /* MainTabViewController.swift */; };
 		86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DC2826EEC600A58841 /* MainTabRouter.swift */; };
+		86BC56E52827742900A58841 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56E12827742900A58841 /* MenuRouter.swift */; };
+		86BC56E62827742900A58841 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56E22827742900A58841 /* MenuViewModel.swift */; };
+		86BC56E72827742900A58841 /* MenuSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56E32827742900A58841 /* MenuSectionModel.swift */; };
+		86BC56E82827742900A58841 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56E42827742900A58841 /* MenuViewController.swift */; };
+		86BC56EF282777DD00A58841 /* CustomCoachMarkBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56EA282777DD00A58841 /* CustomCoachMarkBodyView.swift */; };
+		86BC56F0282777DD00A58841 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56EB282777DD00A58841 /* SpinnerView.swift */; };
+		86BC56F1282777DD00A58841 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56EC282777DD00A58841 /* WebView.swift */; };
+		86BC56F2282777DD00A58841 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56ED282777DD00A58841 /* EmptyStateView.swift */; };
+		86BC56F3282777DD00A58841 /* PageSheetStyleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56EE282777DD00A58841 /* PageSheetStyleHeaderView.swift */; };
 		B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +77,6 @@
 		8676C5C12826C91B0010CE7A /* KusuriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KusuriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676C5C52826C91B0010CE7A /* KusuriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriUITests.swift; sourceTree = "<group>"; };
 		8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		86821A252826DA50005ABBDD /* Font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Font; sourceTree = "<group>"; };
 		86821A2C2826DC8E005ABBDD /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		86821A2D2826DC8E005ABBDD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		86821A2E2826DC8E005ABBDD /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
@@ -80,9 +88,21 @@
 		86821A342826DC8E005ABBDD /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		86821A352826DC8E005ABBDD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		86821A362826DC8E005ABBDD /* UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
+		868D41652827A9B60045702A /* NotoSansJP-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Regular.otf"; sourceTree = "<group>"; };
+		868D41662827A9B60045702A /* NotoSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Light.otf"; sourceTree = "<group>"; };
+		868D41672827A9B60045702A /* NotoSansJP-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Bold.otf"; sourceTree = "<group>"; };
 		86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 		86BC56DB2826EEC600A58841 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		86BC56DC2826EEC600A58841 /* MainTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabRouter.swift; sourceTree = "<group>"; };
+		86BC56E12827742900A58841 /* MenuRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		86BC56E22827742900A58841 /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		86BC56E32827742900A58841 /* MenuSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSectionModel.swift; sourceTree = "<group>"; };
+		86BC56E42827742900A58841 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		86BC56EA282777DD00A58841 /* CustomCoachMarkBodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCoachMarkBodyView.swift; sourceTree = "<group>"; };
+		86BC56EB282777DD00A58841 /* SpinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		86BC56EC282777DD00A58841 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		86BC56ED282777DD00A58841 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		86BC56EE282777DD00A58841 /* PageSheetStyleHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageSheetStyleHeaderView.swift; sourceTree = "<group>"; };
 		A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KusuriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8402451325C4E77047BF713 /* Pods_Kusuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86BC56D72826EE0B00A58841 /* Alamofire in Frameworks */,
-				86BC56D02826EC1A00A58841 /* Siren in Frameworks */,
 				4D9242E5BA1F485F3B56FA97 /* Pods_Kusuri.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +193,7 @@
 			children = (
 				8676C5B22826C91A0010CE7A /* Info.plist */,
 				8676C5AD2826C91A0010CE7A /* Assets.xcassets */,
-				86821A252826DA50005ABBDD /* Font */,
+				868D41642827A9B60045702A /* Font */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -199,10 +217,22 @@
 			path = "/Users/yusukeinoue/Develop/Kusuri-iOS/Kusuri/Util";
 			sourceTree = "<absolute>";
 		};
+		868D41642827A9B60045702A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				868D41652827A9B60045702A /* NotoSansJP-Regular.otf */,
+				868D41662827A9B60045702A /* NotoSansJP-Light.otf */,
+				868D41672827A9B60045702A /* NotoSansJP-Bold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		86BC56D82826EE6E00A58841 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				86BC56D92826EEC600A58841 /* MainTab */,
+				86BC56E02827742900A58841 /* Menu */,
+				86BC56E9282777DD00A58841 /* UIParts */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -215,6 +245,30 @@
 				86BC56DC2826EEC600A58841 /* MainTabRouter.swift */,
 			);
 			path = MainTab;
+			sourceTree = "<group>";
+		};
+		86BC56E02827742900A58841 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				86BC56E12827742900A58841 /* MenuRouter.swift */,
+				86BC56E22827742900A58841 /* MenuViewModel.swift */,
+				86BC56E32827742900A58841 /* MenuSectionModel.swift */,
+				86BC56E42827742900A58841 /* MenuViewController.swift */,
+			);
+			name = Menu;
+			path = Kusuri/UI/Menu;
+			sourceTree = SOURCE_ROOT;
+		};
+		86BC56E9282777DD00A58841 /* UIParts */ = {
+			isa = PBXGroup;
+			children = (
+				86BC56EA282777DD00A58841 /* CustomCoachMarkBodyView.swift */,
+				86BC56EB282777DD00A58841 /* SpinnerView.swift */,
+				86BC56EC282777DD00A58841 /* WebView.swift */,
+				86BC56ED282777DD00A58841 /* EmptyStateView.swift */,
+				86BC56EE282777DD00A58841 /* PageSheetStyleHeaderView.swift */,
+			);
+			path = UIParts;
 			sourceTree = "<group>";
 		};
 		9C2C080F1550107C0B7D7974 /* Pods */ = {
@@ -259,8 +313,6 @@
 			);
 			name = Kusuri;
 			packageProductDependencies = (
-				86BC56CF2826EC1A00A58841 /* Siren */,
-				86BC56D62826EE0B00A58841 /* Alamofire */,
 			);
 			productName = Kusuri;
 			productReference = 8676C5A12826C9180010CE7A /* Kusuri.app */;
@@ -338,10 +390,6 @@
 			);
 			mainGroup = 8676C5982826C9180010CE7A;
 			packageReferences = (
-				86BC56CE2826EC1A00A58841 /* XCRemoteSwiftPackageReference "Siren" */,
-				86BC56D22826ED9800A58841 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				86BC56D42826EDEC00A58841 /* XCRemoteSwiftPackageReference "RxDataSources" */,
-				86BC56D52826EE0B00A58841 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 8676C5A22826C9180010CE7A /* Products */;
 			projectDirPath = "";
@@ -360,8 +408,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8676C5B12826C91A0010CE7A /* LaunchScreen.storyboard in Resources */,
-				86821A262826DA50005ABBDD /* Font in Resources */,
+				868D416C2827A9B60045702A /* NotoSansJP-Bold.otf in Resources */,
+				868D416B2827A9B60045702A /* NotoSansJP-Light.otf in Resources */,
 				8676C5AE2826C91A0010CE7A /* Assets.xcassets in Resources */,
+				868D416A2827A9B60045702A /* NotoSansJP-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,20 +540,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				86821A382826DCC6005ABBDD /* Date.swift in Sources */,
+				86BC56EF282777DD00A58841 /* CustomCoachMarkBodyView.swift in Sources */,
+				86BC56F2282777DD00A58841 /* EmptyStateView.swift in Sources */,
+				86BC56E52827742900A58841 /* MenuRouter.swift in Sources */,
 				86821A392826DCC6005ABBDD /* UIColor.swift in Sources */,
 				86821A3A2826DCC6005ABBDD /* NSObject.swift in Sources */,
 				86821A3B2826DCC6005ABBDD /* ActivityIndicator.swift in Sources */,
 				86821A3C2826DCC6005ABBDD /* UIDevice.swift in Sources */,
 				86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */,
 				86821A3D2826DCC6005ABBDD /* UITextField.swift in Sources */,
+				86BC56E72827742900A58841 /* MenuSectionModel.swift in Sources */,
 				86821A3E2826DCC6005ABBDD /* UITableViewCell.swift in Sources */,
+				86BC56F3282777DD00A58841 /* PageSheetStyleHeaderView.swift in Sources */,
 				86821A3F2826DCC6005ABBDD /* String.swift in Sources */,
 				86821A402826DCC6005ABBDD /* UIImage.swift in Sources */,
+				86BC56F0282777DD00A58841 /* SpinnerView.swift in Sources */,
 				86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */,
 				86821A412826DCC6005ABBDD /* UIFont.swift in Sources */,
+				86BC56E82827742900A58841 /* MenuViewController.swift in Sources */,
 				86821A422826DCC6005ABBDD /* UIControl.swift in Sources */,
+				86BC56E62827742900A58841 /* MenuViewModel.swift in Sources */,
 				8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */,
 				86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */,
+				86BC56F1282777DD00A58841 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,54 +914,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		86BC56CE2826EC1A00A58841 /* XCRemoteSwiftPackageReference "Siren" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ArtSabintsev/Siren.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		86BC56D22826ED9800A58841 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		86BC56D42826EDEC00A58841 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		86BC56D52826EE0B00A58841 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		86BC56CF2826EC1A00A58841 /* Siren */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86BC56CE2826EC1A00A58841 /* XCRemoteSwiftPackageReference "Siren" */;
-			productName = Siren;
-		};
-		86BC56D62826EE0B00A58841 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 86BC56D52826EE0B00A58841 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8676C5992826C9180010CE7A /* Project object */;
 }
