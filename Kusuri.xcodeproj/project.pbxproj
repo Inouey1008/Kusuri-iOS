@@ -29,6 +29,10 @@
 		868D416A2827A9B60045702A /* NotoSansJP-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41652827A9B60045702A /* NotoSansJP-Regular.otf */; };
 		868D416B2827A9B60045702A /* NotoSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41662827A9B60045702A /* NotoSansJP-Light.otf */; };
 		868D416C2827A9B60045702A /* NotoSansJP-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41672827A9B60045702A /* NotoSansJP-Bold.otf */; };
+		868D41722827B8C70045702A /* BarcodeReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D416F2827B8C70045702A /* BarcodeReadViewController.swift */; };
+		868D41732827B8C70045702A /* BarcodeReadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41702827B8C70045702A /* BarcodeReadViewModel.swift */; };
+		868D41742827B8C70045702A /* BarcodeReadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41712827B8C70045702A /* BarcodeReadRouter.swift */; };
+		868D41762827B9560045702A /* Gs1BarcodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41752827B9560045702A /* Gs1BarcodeHandler.swift */; };
 		86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */; };
 		86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DB2826EEC600A58841 /* MainTabViewController.swift */; };
 		86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DC2826EEC600A58841 /* MainTabRouter.swift */; };
@@ -91,6 +95,10 @@
 		868D41652827A9B60045702A /* NotoSansJP-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Regular.otf"; sourceTree = "<group>"; };
 		868D41662827A9B60045702A /* NotoSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Light.otf"; sourceTree = "<group>"; };
 		868D41672827A9B60045702A /* NotoSansJP-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Bold.otf"; sourceTree = "<group>"; };
+		868D416F2827B8C70045702A /* BarcodeReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadViewController.swift; sourceTree = "<group>"; };
+		868D41702827B8C70045702A /* BarcodeReadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadViewModel.swift; sourceTree = "<group>"; };
+		868D41712827B8C70045702A /* BarcodeReadRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadRouter.swift; sourceTree = "<group>"; };
+		868D41752827B9560045702A /* Gs1BarcodeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gs1BarcodeHandler.swift; path = Kusuri/UI/BarcodeRead/Gs1BarcodeHandler.swift; sourceTree = SOURCE_ROOT; };
 		86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 		86BC56DB2826EEC600A58841 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		86BC56DC2826EEC600A58841 /* MainTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabRouter.swift; sourceTree = "<group>"; };
@@ -162,7 +170,6 @@
 		8676C5A32826C9180010CE7A /* Kusuri */ = {
 			isa = PBXGroup;
 			children = (
-				8676C5AF2826C91A0010CE7A /* LaunchScreen.storyboard */,
 				8676C5A42826C9180010CE7A /* AppDelegate.swift */,
 				86BC56D82826EE6E00A58841 /* UI */,
 				86821A242826D9F8005ABBDD /* Resource */,
@@ -227,10 +234,23 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		868D416E2827B8C70045702A /* BarcodeRead */ = {
+			isa = PBXGroup;
+			children = (
+				868D41752827B9560045702A /* Gs1BarcodeHandler.swift */,
+				868D416F2827B8C70045702A /* BarcodeReadViewController.swift */,
+				868D41702827B8C70045702A /* BarcodeReadViewModel.swift */,
+				868D41712827B8C70045702A /* BarcodeReadRouter.swift */,
+			);
+			path = BarcodeRead;
+			sourceTree = "<group>";
+		};
 		86BC56D82826EE6E00A58841 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				8676C5AF2826C91A0010CE7A /* LaunchScreen.storyboard */,
 				86BC56D92826EEC600A58841 /* MainTab */,
+				868D416E2827B8C70045702A /* BarcodeRead */,
 				86BC56E02827742900A58841 /* Menu */,
 				86BC56E9282777DD00A58841 /* UIParts */,
 			);
@@ -250,10 +270,10 @@
 		86BC56E02827742900A58841 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				86BC56E12827742900A58841 /* MenuRouter.swift */,
-				86BC56E22827742900A58841 /* MenuViewModel.swift */,
 				86BC56E32827742900A58841 /* MenuSectionModel.swift */,
 				86BC56E42827742900A58841 /* MenuViewController.swift */,
+				86BC56E22827742900A58841 /* MenuViewModel.swift */,
+				86BC56E12827742900A58841 /* MenuRouter.swift */,
 			);
 			name = Menu;
 			path = Kusuri/UI/Menu;
@@ -540,10 +560,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				86821A382826DCC6005ABBDD /* Date.swift in Sources */,
+				868D41762827B9560045702A /* Gs1BarcodeHandler.swift in Sources */,
 				86BC56EF282777DD00A58841 /* CustomCoachMarkBodyView.swift in Sources */,
 				86BC56F2282777DD00A58841 /* EmptyStateView.swift in Sources */,
 				86BC56E52827742900A58841 /* MenuRouter.swift in Sources */,
 				86821A392826DCC6005ABBDD /* UIColor.swift in Sources */,
+				868D41742827B8C70045702A /* BarcodeReadRouter.swift in Sources */,
 				86821A3A2826DCC6005ABBDD /* NSObject.swift in Sources */,
 				86821A3B2826DCC6005ABBDD /* ActivityIndicator.swift in Sources */,
 				86821A3C2826DCC6005ABBDD /* UIDevice.swift in Sources */,
@@ -556,6 +578,8 @@
 				86821A402826DCC6005ABBDD /* UIImage.swift in Sources */,
 				86BC56F0282777DD00A58841 /* SpinnerView.swift in Sources */,
 				86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */,
+				868D41732827B8C70045702A /* BarcodeReadViewModel.swift in Sources */,
+				868D41722827B8C70045702A /* BarcodeReadViewController.swift in Sources */,
 				86821A412826DCC6005ABBDD /* UIFont.swift in Sources */,
 				86BC56E82827742900A58841 /* MenuViewController.swift in Sources */,
 				86821A422826DCC6005ABBDD /* UIControl.swift in Sources */,

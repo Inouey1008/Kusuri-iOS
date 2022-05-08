@@ -23,11 +23,9 @@ final class MainTabViewController: UITabBarController {
         tabBar.tintColor = .primary
         
         setViewControllers([
-//            あとで直す！！
 //            SearchPagerTabRouter.generate(),
-//            BarcodeReadRouter.generate(),
             UIViewController(),
-            UIViewController(),
+            BarcodeReadRouter.generate(),
             MenuRouter.generate()
         ], animated: false)
     }

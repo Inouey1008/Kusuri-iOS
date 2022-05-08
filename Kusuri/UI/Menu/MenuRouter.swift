@@ -21,6 +21,7 @@ final class MenuRouter {
         viewModel.router = router
         view.viewModel = viewModel
         view.tabBarItem = UITabBarItem(title: "メニュー", image: UIImage(systemName: "line.3.horizontal"), tag: 0)
+        view.tabBarItem.setTitleTextAttributes([.font : UIFont.tabBarTitle, .foregroundColor : UIColor.primary], for: .normal)
         view.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         return UINavigationController(rootViewController: view)
     }
