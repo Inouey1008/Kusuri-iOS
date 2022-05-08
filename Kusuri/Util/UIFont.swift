@@ -48,6 +48,10 @@ extension UIFont {
         return LightFont(size: smallSize)
     }
     
+    static var tabBarTitle: UIFont {
+        return UIFont(name: "NotoSansJP-Regular", size: UIDevice.current.separateValue(forPad: 14.0, forPhone: 10.5))!
+    }
+    
     static func BoldFont(size: CGFloat) -> UIFont {
         return UIFont(name: "NotoSansJP-Bold", size: size)!
     }

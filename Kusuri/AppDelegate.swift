@@ -7,7 +7,6 @@
 
 import UIKit
 import Siren
-import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupNavigationBar()
         setupTabBar()
         setupWindow()
-        IQKeyboardManager.shared.enable = true
+        print(Date())
         return true
     }
     

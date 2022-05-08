@@ -1,0 +1,101 @@
+name: Alamofire, nameSpecified: 
+body: Copyright (c) 2014-2…
+version: 5.5.0
+
+name: Alamofire, nameSpecified: 
+body: Copyright (c) 2014-2…
+version: 5.5.0
+
+name: Differentiator, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 5.0.0
+
+name: Differentiator, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 5.0.0
+
+name: RxCocoa, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.5.0
+
+name: RxCocoa, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.5.0
+
+name: RxDataSources, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 5.0.0
+
+name: RxDataSources, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 5.0.0
+
+name: RxRelay, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.5.0
+
+name: RxRelay, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.5.0
+
+name: RxSwift, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.5.0
+
+name: RxSwift, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.5.0
+
+name: Siren, nameSpecified: 
+body: The MIT License (MIT…
+version: 6.0.1
+
+name: Siren, nameSpecified: 
+body: The MIT License (MIT…
+version: 6.0.1
+
+name: SnapKit, nameSpecified: 
+body: Copyright (c) 2011-P…
+version: 5.0.1
+
+name: SnapKit, nameSpecified: 
+body: Copyright (c) 2011-P…
+version: 5.0.1
+
+name: XLPagerTabStrip, nameSpecified: 
+body: The MIT License (MIT…
+version: 9.0.0
+
+name: XLPagerTabStrip, nameSpecified: 
+body: The MIT License (MIT…
+version: 9.0.0
+
+name: LicensePlist, nameSpecified: , owner: mono0926, version: 3.22.0, source: https://github.com/mono0926/LicensePlist
+
+name: RxDataSources, nameSpecified: RxDataSources, owner: RxSwiftCommunity, version: 5.0.2, source: https://github.com/RxSwiftCommunity/RxDataSources
+
+name: RxSwift, nameSpecified: RxSwift, owner: ReactiveX, version: 6.2.0, source: https://github.com/ReactiveX/RxSwift
+
+name: Siren, nameSpecified: Siren, owner: ArtSabintsev, version: 6.0.0, source: https://github.com/ArtSabintsev/Siren
+
+name: SnapKit, nameSpecified: SnapKit, owner: SnapKit, version: 5.0.1, source: https://github.com/SnapKit/SnapKit
+
+name: SwiftSoup, nameSpecified: SwiftSoup, owner: scinfu, version: 2.3.8, source: https://github.com/scinfu/SwiftSoup
+
+add-version-numbers: false
+
+LicensePlist Version: 3.22.0
