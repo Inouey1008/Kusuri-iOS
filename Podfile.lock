@@ -1,7 +1,6 @@
 PODS:
   - Alamofire (5.5.0)
   - Differentiator (5.0.0)
-  - IQKeyboardManagerSwift (6.5.9)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -18,7 +17,6 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - IQKeyboardManagerSwift
   - RxCocoa (= 6.5.0)
   - RxDataSources (~> 5.0)
   - RxSwift (= 6.5.0)
@@ -30,7 +28,6 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Differentiator
-    - IQKeyboardManagerSwift
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -42,7 +39,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
-  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
@@ -51,6 +47,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: de684dbdd5738ed1a0e8a2454f7c08a16b28adb9
+PODFILE CHECKSUM: 67c43a3b3f34ffc53158f5069ccc73c39caa7dbb
 
 COCOAPODS: 1.11.2

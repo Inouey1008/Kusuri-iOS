@@ -31,7 +31,6 @@ final class MenuViewModel {
         input.itemSelected
             .emit(onNext: { [weak self] IndexPath in
                 guard let self = self else { return }
-                print(IndexPath.section, IndexPath.row)
                 let selectedSection = items[IndexPath.section]
                 let selectedItem = selectedSection.items[IndexPath.row]
                 
