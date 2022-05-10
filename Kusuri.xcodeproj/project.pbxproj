@@ -35,6 +35,7 @@
 		868D41762827B9560045702A /* Gs1BarcodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41752827B9560045702A /* Gs1BarcodeHandler.swift */; };
 		868D41782827CA740045702A /* Mintfile in Resources */ = {isa = PBXBuildFile; fileRef = 868D41772827CA740045702A /* Mintfile */; };
 		868D417A2827CE6E0045702A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 868D41792827CE6E0045702A /* Settings.bundle */; };
+		868D417D2827F4300045702A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D417C2827F4300045702A /* Colors.xcassets */; };
 		86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */; };
 		86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DB2826EEC600A58841 /* MainTabViewController.swift */; };
 		86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DC2826EEC600A58841 /* MainTabRouter.swift */; };
@@ -103,6 +104,7 @@
 		868D41752827B9560045702A /* Gs1BarcodeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gs1BarcodeHandler.swift; path = Kusuri/UI/BarcodeRead/Gs1BarcodeHandler.swift; sourceTree = SOURCE_ROOT; };
 		868D41772827CA740045702A /* Mintfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
 		868D41792827CE6E0045702A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
+		868D417C2827F4300045702A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 		86BC56DB2826EEC600A58841 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		86BC56DC2826EEC600A58841 /* MainTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabRouter.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			children = (
 				8676C5B22826C91A0010CE7A /* Info.plist */,
 				8676C5AD2826C91A0010CE7A /* Assets.xcassets */,
+				868D417C2827F4300045702A /* Colors.xcassets */,
 				868D41642827A9B60045702A /* Font */,
 			);
 			path = Resource;
@@ -439,6 +442,7 @@
 				868D416C2827A9B60045702A /* NotoSansJP-Bold.otf in Resources */,
 				868D416B2827A9B60045702A /* NotoSansJP-Light.otf in Resources */,
 				8676C5AE2826C91A0010CE7A /* Assets.xcassets in Resources */,
+				868D417D2827F4300045702A /* Colors.xcassets in Resources */,
 				868D416A2827A9B60045702A /* NotoSansJP-Regular.otf in Resources */,
 				868D417A2827CE6E0045702A /* Settings.bundle in Resources */,
 			);

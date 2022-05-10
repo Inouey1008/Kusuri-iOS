@@ -12,7 +12,7 @@ final class MainTabViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .backgroundBase
         tabBar.layer.shadowColor = UIColor.lightGray.cgColor
         tabBar.layer.shadowOpacity = 0.5
         tabBar.layer.shadowOffset = CGSize.zero

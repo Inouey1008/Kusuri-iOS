@@ -63,7 +63,7 @@ final class BarcodeReadViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = .clear
         view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor.border.cgColor
+        view.layer.borderColor = UIColor.gray.cgColor
         return view
     }()
     
@@ -104,13 +104,13 @@ final class BarcodeReadViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = .clear
         view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor.border.cgColor
+        view.layer.borderColor = UIColor.gray.cgColor
         return view
     }()
     
     private let gtinCenterBorder: UIView = {
         let view = UIView()
-        view.backgroundColor = .border
+        view.backgroundColor = .gray
         return view
     }()
     
@@ -180,6 +180,7 @@ final class BarcodeReadViewController: UIViewController {
         titleLabel.font = .largeRegular
         navigationItem.titleView = titleLabel
         navigationItem.hidesSearchBarWhenScrolling = false
+        navigationController?.navigationBar.tintColor = .primary
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.isTranslucent = false
         
