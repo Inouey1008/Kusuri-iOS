@@ -21,7 +21,6 @@ extension UIColor {
     static let weakestGray     = UIColor(named: "WeakestGray")!
     static let backgroundBase  = UIColor(named: "BackgroundBase")!
     static let backgroundCover = UIColor(named: "BackgroundCover")!
-    static let background      = UIColor(named: "Background")!
     static let header          = UIColor(named: "BackgroundCover")!
     static let strongText      = UIColor(named: "StrongText")!
     static let text            = UIColor(named: "Text")!

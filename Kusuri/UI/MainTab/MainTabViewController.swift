@@ -13,7 +13,7 @@ final class MainTabViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .backgroundBase
-        tabBar.layer.shadowColor = UIColor.lightGray.cgColor
+        tabBar.layer.shadowColor = UITraitCollection.current.separateValue(dark: UIColor.clear.cgColor, light: UIColor.lightGray.cgColor)
         tabBar.layer.shadowOpacity = 0.5
         tabBar.layer.shadowOffset = CGSize.zero
         tabBar.layer.shadowRadius = 5
@@ -23,8 +23,7 @@ final class MainTabViewController: UITabBarController {
         tabBar.tintColor = .primary
         
         setViewControllers([
-//            SearchPagerTabRouter.generate(),
-            UIViewController(),
+            SearchPagerTabRouter.generate(),
             BarcodeReadRouter.generate(),
             MenuRouter.generate()
         ], animated: false)
