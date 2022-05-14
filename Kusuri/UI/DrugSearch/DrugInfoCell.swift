@@ -13,7 +13,8 @@ final class DrugInfoListCell: UITableViewCell {
     private lazy var cellArea: UIView = {
         let view = UIView()
         view.backgroundColor = .backgroundBase
-        view.layer.borderColor = UITraitCollection.current.separateValue(dark: UIColor.strongestGray.cgColor, light: UIColor.weakGray.cgColor)
+        let borderColor = UITraitCollection.current.separateValue(dark: UIColor.strongestGray.cgColor, light: UIColor.weakGray.cgColor)
+        view.layer.borderColor = borderColor
         view.layer.borderWidth = 0.5
         view.layer.cornerRadius = 8
         view.layer.masksToBounds = false
@@ -56,19 +57,22 @@ final class DrugInfoListCell: UITableViewCell {
     }
 
     private func adjustLayout() {
-        tradeNameLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(10)
-            $0.left.right.equalToSuperview().inset(16)
-        }
-        companyLabel.snp.makeConstraints {
-            $0.top.equalTo(tradeNameLabel.snp.bottom).offset(8)
-            $0.left.right.equalToSuperview().inset(16)
-            $0.bottom.equalToSuperview().inset(10)
-        }
-        cellArea.snp.makeConstraints {
-            $0.top.bottom.equalToSuperview().inset(UIDevice.current.separateValue(forPad: 10, forPhone: 5))
-            $0.left.right.equalToSuperview().inset(UIDevice.current.separateValue(forPad: 24, forPhone: 16))
-        }
+        tradeNameLabel.snp.makeConstraints({ make in
+            make.top.equalToSuperview().inset(10)
+            make.left.right.equalToSuperview().inset(16)
+        })
+        companyLabel.snp.makeConstraints({ make in
+            make.top.equalTo(tradeNameLabel.snp.bottom).offset(8)
+            make.left.right.equalToSuperview().inset(16)
+            make.bottom.equalToSuperview().inset(10)
+        })
+        cellArea.snp.makeConstraints({ make in
+            let verticalInset = UIDevice.current.separateValue(forPad: 10, forPhone: 5)
+            let horizontalInset = UIDevice.current.separateValue(forPad: 24, forPhone: 16)
+            
+            make.top.bottom.equalToSuperview().inset(verticalInset)
+            make.left.right.equalToSuperview().inset(horizontalInset)
+        })
     }
 
     func configure(drugInfo: DrugInfo) {

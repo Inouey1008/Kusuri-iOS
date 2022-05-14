@@ -9,22 +9,25 @@ import UIKit
 import SnapKit
 
 final class EmptyStateView: UIView {
+    var imageView = UIImageView()
     
-    lazy var imageView = UIImageView()
+    var titleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .weakText
+        label.font = .largeRegular
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
     
-    lazy var titleLabel = UILabel().apply {
-        $0.textColor = .gray
-        $0.font = .largeRegular
-        $0.textAlignment = .center
-        $0.numberOfLines = 0
-    }
-    
-    lazy var messageLabel = UILabel().apply {
-        $0.textColor = .gray
-        $0.font = .mediumLight
-        $0.textAlignment = .center
-        $0.numberOfLines = 0
-    }
+    var messageLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .weakText
+        label.font = .mediumLight
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,20 +43,27 @@ final class EmptyStateView: UIView {
     }
     
     private func adjustLayout() {
-        imageView.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.bottom.equalTo(titleLabel.snp.top).offset(UIDevice.current.separateValue(forPad: -60, forPhone: -30))
-            $0.height.width.equalTo(UIDevice.current.separateValue(forPad: 200, forPhone: 100))
-        }
-        titleLabel.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.centerY.equalToSuperview()
-            $0.left.right.equalToSuperview()
-        }
-        messageLabel.snp.makeConstraints {
-            $0.top.equalTo(titleLabel.snp.bottom).offset(UIDevice.current.separateValue(forPad: 60, forPhone: 30))
-            $0.centerX.equalToSuperview()
-            $0.left.right.equalToSuperview()
-        }
+        imageView.snp.makeConstraints({ make in
+            let bottomOffset = UIDevice.current.separateValue(forPad: -60, forPhone: -40)
+            let heightWidth = UIDevice.current.separateValue(forPad: 100, forPhone: 75)
+            
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(titleLabel.snp.top).offset(bottomOffset)
+            make.height.width.equalTo(heightWidth)
+        })
+        titleLabel.snp.makeConstraints({ make in
+            let horizontalInset = UIDevice.current.separateValue(forPad: 60, forPhone: 30)
+            
+            make.center.equalToSuperview()
+            make.left.right.equalToSuperview().inset(horizontalInset)
+        })
+        messageLabel.snp.makeConstraints({ make in
+            let topOffset = UIDevice.current.separateValue(forPad: 60, forPhone: 30)
+            let horizontalInset = UIDevice.current.separateValue(forPad: 60, forPhone: 30)
+            
+            make.top.equalTo(titleLabel.snp.bottom).offset(topOffset)
+            make.centerX.equalToSuperview()
+            make.left.right.equalToSuperview().inset(horizontalInset)
+        })
     }
 }

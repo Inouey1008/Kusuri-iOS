@@ -21,11 +21,6 @@ final class MainTabViewController: UITabBarController {
         tabBar.layer.borderWidth = 0
         tabBar.clipsToBounds = false
         tabBar.tintColor = .primary
-        
-        setViewControllers([
-            SearchPagerTabRouter.generate(),
-            BarcodeReadRouter.generate(),
-            MenuRouter.generate()
-        ], animated: false)
+        setViewControllers([SearchPageTabRouter.generate(), BarcodeReadRouter.generate(), MenuRouter.generate()], animated: false)
     }
 }

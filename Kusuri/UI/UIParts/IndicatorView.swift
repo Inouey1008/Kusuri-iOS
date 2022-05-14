@@ -10,38 +10,34 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-final class SpinnerView: UIView {
+final class IndicatorView: UIView {
     
     private let indicator: UIActivityIndicatorView = {
         let indicator = UIActivityIndicatorView()
         indicator.style = .large
-        indicator.color = .white
+        indicator.color = .gray
         indicator.hidesWhenStopped = true
         return indicator
     }()
     
     var animating: Bool = false {
         didSet {
-            if animating {
-                startAnimating()
-            } else {
-                stopAnimating()
-            }
+            animating ? startAnimating() : stopAnimating()
         }
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.3)
+        backgroundColor = .clear
         isHidden = true
         addSubview(indicator)
         adjustLayout()
     }
     
     private func adjustLayout() {
-        indicator.snp.makeConstraints {
-            $0.center.equalToSuperview()
-        }
+        indicator.snp.makeConstraints({ make in
+            make.center.equalToSuperview()
+        })
     }
     
     required init(coder: NSCoder) {

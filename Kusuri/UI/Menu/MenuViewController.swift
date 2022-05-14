@@ -69,9 +69,9 @@ final class MenuViewController: UIViewController {
     }
     
     private func adjustLayout() {
-        tableView.snp.makeConstraints { make in
+        tableView.snp.makeConstraints({ make in
             make.edges.equalTo(view.safeAreaLayoutGuide)
-        }
+        })
     }
     
     private func bind() {
@@ -89,9 +89,8 @@ final class MenuViewController: UIViewController {
     private func addActions() {
         tableView.rx
             .itemSelected
-            .subscribe(onNext: { [weak self] indexPath in
-                guard let self = self else { return }
-                self.tableView.deselectRow(at: indexPath, animated: true)
+            .subscribe(with: self, onNext: { Object, IndexPath in
+                Object.tableView.deselectRow(at: IndexPath, animated: true)
             })
             .disposed(by: disposeBag)
     }

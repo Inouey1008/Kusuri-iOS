@@ -1,5 +1,5 @@
 //
-//  SearchPagerTabViewController.swift
+//  SearchPageTabViewController.swift
 //  Kusuri
 //
 //  Created by Yus Inoue on 2021/08/14.
@@ -8,8 +8,8 @@
 import UIKit
 import XLPagerTabStrip
 
-final class SearchPagerTabViewController: ButtonBarPagerTabStripViewController {
-    var viewModel: SearchPagerTabViewModel!
+final class SearchPageTabViewController: ButtonBarPagerTabStripViewController {
+    var viewModel: SearchPageTabViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,6 @@ final class SearchPagerTabViewController: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarItemTitleColor = .text
         settings.style.selectedBarHeight = UIDevice.current.separateValue(forPad: 4, forPhone: 2)
         settings.style.selectedBarBackgroundColor = .primary
-        return [MedicalDrugSearchRouter.generate(), MedicalDrugSearchRouter.generate()]
+        return [DrugSearchRouter.generate(type: .medical), DrugSearchRouter.generate(type: .otc)]
     }
 }

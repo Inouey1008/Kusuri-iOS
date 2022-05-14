@@ -1,5 +1,5 @@
 //
-//  SearchPagerTabViewRouter.swift
+//  SearchPageTabViewRouter.swift
 //  Kusuri
 //
 //  Created by Yusuke Inoue on 2022/05/05.
@@ -7,7 +7,7 @@
 
 import UIKit.UIViewController
 
-final class SearchPagerTabRouter {
+final class SearchPageTabRouter {
     private unowned let view: UIViewController
 
     init(view: UIViewController) {
@@ -15,9 +15,9 @@ final class SearchPagerTabRouter {
     }
 
     static func generate() -> UIViewController {
-        let viewModel = SearchPagerTabViewModel()
-        let view = SearchPagerTabViewController()
-        let router = SearchPagerTabRouter(view: view)
+        let viewModel = SearchPageTabViewModel()
+        let view = SearchPageTabViewController()
+        let router = SearchPageTabRouter(view: view)
         viewModel.router = router
         view.viewModel = viewModel
         view.tabBarItem = UITabBarItem(title: "検索", image: UIImage(systemName: "magnifyingglass"), tag: 0)

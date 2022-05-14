@@ -29,20 +29,19 @@ final class MenuViewModel {
         ]
         
         input.itemSelected
-            .emit(onNext: { [weak self] IndexPath in
-                guard let self = self else { return }
+            .emit(with: self, onNext: { Object, IndexPath in
                 let selectedSection = items[IndexPath.section]
                 let selectedItem = selectedSection.items[IndexPath.row]
                 
                 switch selectedItem {
                 case .contactUs:
-                    self.router.openBrowser("https://forms.gle/8mjR8ds8cuwMPRcf9")
+                    Object.router.openBrowser("https://forms.gle/8mjR8ds8cuwMPRcf9")
                 case .appReview:
-                    self.router.openBrowser("https://apps.apple.com/us/app/id1622959628?action=write-review")
+                    Object.router.openBrowser("https://apps.apple.com/us/app/id1622959628?action=write-review")
                 case .useTerms:
-                    self.router.showWebView(title: selectedItem.title, url: "https://sites.google.com/view/kusuri-app/use-terms")
+                    Object.router.showWebView(title: selectedItem.title, url: "https://sites.google.com/view/kusuri-app/use-terms")
                 case .plivacyPolicy:
-                    self.router.showWebView(title: selectedItem.title, url: "https://sites.google.com/view/kusuri-app/privacy-policy")
+                    Object.router.showWebView(title: selectedItem.title, url: "https://sites.google.com/view/kusuri-app/privacy-policy")
                 case .version:
                     break
                 }
