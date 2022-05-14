@@ -58,14 +58,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupNavigationBar() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .white
+        appearance.backgroundColor = .backgroundBase
         appearance.shadowImage = UIImage()
         appearance.shadowColor = .clear
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
         UINavigationBar.appearance().backgroundColor = .primary
         UINavigationBar.appearance().barTintColor = .primary
-        UINavigationBar.appearance().backgroundColor = .white
+        UINavigationBar.appearance().backgroundColor = .backgroundBase
         UINavigationBar.appearance().barTintColor = .backgroundCover
         UINavigationBar.appearance().tintColor = .primary
     }

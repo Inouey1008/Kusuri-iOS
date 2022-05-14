@@ -12,6 +12,7 @@ target 'Kusuri' do
   pod 'SnapKit'
   pod 'Siren'
   pod 'Alamofire'
+  pod 'SwiftSoup'
 
   # Pods for Kusuri
 
