@@ -1,5 +1,5 @@
 //
-//  Gs1BarcodeHandler.swift
+//  BarcodeReader.swift
 //  Kusuri
 //
 //  Created by Yusuke Inoue on 2022/04/30.
@@ -10,7 +10,7 @@ import Vision
 import RxSwift
 import RxCocoa
 
-class Gs1BarcodeHandler: NSObject {
+class BarcodeReader: NSObject {
     let session: AVCaptureSession!
     let previewLayer: AVCaptureVideoPreviewLayer!
     
@@ -37,7 +37,9 @@ class Gs1BarcodeHandler: NSObject {
         super.init()
         
         observer = session.observe(\.isRunning, options: .new, changeHandler: { [weak self] _, change in
-            guard let self = self, let newValue = change.newValue else { return }
+            guard let self = self, let newValue = change.newValue else {
+                return
+            }
             self.runnningRelay.accept(newValue)
         })
     }
@@ -84,9 +86,11 @@ class Gs1BarcodeHandler: NSObject {
     }
 }
 
-extension Gs1BarcodeHandler: AVCaptureVideoDataOutputSampleBufferDelegate {
+extension BarcodeReader: AVCaptureVideoDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
+        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+            return
+        }
         
         let barcodesRequest = VNDetectBarcodesRequest { [weak self] request, error in
             guard let self = self, let barcode = request.results?.first as? VNBarcodeObservation, error == nil else {
@@ -95,7 +99,6 @@ extension Gs1BarcodeHandler: AVCaptureVideoDataOutputSampleBufferDelegate {
             self.detect(barcode: barcode)
         }
         barcodesRequest.revision = VNDetectBarcodesRequestRevision2
-        barcodesRequest.regionOfInterest = CGRect(x: 0.1, y: 0.1, width: 0.8, height: 0.8)  // MARK: できればキャプチャする範囲を絞りたい
         
         do {
             let handler = VNSequenceRequestHandler()

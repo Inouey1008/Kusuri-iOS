@@ -70,9 +70,10 @@ final class ModalPresentationWebView: UIViewController, WKUIDelegate {
             make.center.equalToSuperview()
         })
         closeButton.snp.makeConstraints({ make in
+            let rightInset = UIDevice.current.separateValue(forPad: 24, forPhone: 16)
             let heightWidth = UIDevice.current.separateValue(forPad: 40, forPhone: 30)
             
-            make.right.equalToSuperview().inset(24)
+            make.right.equalToSuperview().inset(rightInset)
             make.centerY.equalToSuperview()
             make.height.width.equalTo(heightWidth)
         })

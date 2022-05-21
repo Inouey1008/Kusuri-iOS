@@ -34,7 +34,7 @@
 		868D41722827B8C70045702A /* BarcodeReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D416F2827B8C70045702A /* BarcodeReadViewController.swift */; };
 		868D41732827B8C70045702A /* BarcodeReadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41702827B8C70045702A /* BarcodeReadViewModel.swift */; };
 		868D41742827B8C70045702A /* BarcodeReadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41712827B8C70045702A /* BarcodeReadRouter.swift */; };
-		868D41762827B9560045702A /* Gs1BarcodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41752827B9560045702A /* Gs1BarcodeHandler.swift */; };
+		868D41762827B9560045702A /* BarcodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41752827B9560045702A /* BarcodeReader.swift */; };
 		868D41782827CA740045702A /* Mintfile in Resources */ = {isa = PBXBuildFile; fileRef = 868D41772827CA740045702A /* Mintfile */; };
 		868D417A2827CE6E0045702A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 868D41792827CE6E0045702A /* Settings.bundle */; };
 		868D417D2827F4300045702A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D417C2827F4300045702A /* Colors.xcassets */; };
@@ -113,7 +113,7 @@
 		868D416F2827B8C70045702A /* BarcodeReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadViewController.swift; sourceTree = "<group>"; };
 		868D41702827B8C70045702A /* BarcodeReadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadViewModel.swift; sourceTree = "<group>"; };
 		868D41712827B8C70045702A /* BarcodeReadRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadRouter.swift; sourceTree = "<group>"; };
-		868D41752827B9560045702A /* Gs1BarcodeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gs1BarcodeHandler.swift; path = Kusuri/UI/BarcodeRead/Gs1BarcodeHandler.swift; sourceTree = SOURCE_ROOT; };
+		868D41752827B9560045702A /* BarcodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarcodeReader.swift; path = Kusuri/UI/BarcodeRead/BarcodeReader.swift; sourceTree = SOURCE_ROOT; };
 		868D41772827CA740045702A /* Mintfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
 		868D41792827CE6E0045702A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
 		868D417C2827F4300045702A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -277,7 +277,7 @@
 		868D416E2827B8C70045702A /* BarcodeRead */ = {
 			isa = PBXGroup;
 			children = (
-				868D41752827B9560045702A /* Gs1BarcodeHandler.swift */,
+				868D41752827B9560045702A /* BarcodeReader.swift */,
 				868D416F2827B8C70045702A /* BarcodeReadViewController.swift */,
 				868D41702827B8C70045702A /* BarcodeReadViewModel.swift */,
 				868D41712827B8C70045702A /* BarcodeReadRouter.swift */,
@@ -679,7 +679,7 @@
 			files = (
 				86AA71E8282A968900A969D6 /* DrugSearchViewController.swift in Sources */,
 				86821A382826DCC6005ABBDD /* Date.swift in Sources */,
-				868D41762827B9560045702A /* Gs1BarcodeHandler.swift in Sources */,
+				868D41762827B9560045702A /* BarcodeReader.swift in Sources */,
 				864B7436282D59E500B57B99 /* UITraitCollection.swift in Sources */,
 				86AA71E5282A968900A969D6 /* DrugSearchRouter.swift in Sources */,
 				86BC56F2282777DD00A58841 /* EmptyStateView.swift in Sources */,
