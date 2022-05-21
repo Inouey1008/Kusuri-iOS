@@ -18,14 +18,15 @@ final class DrugSearchViewController: UIViewController {
 
     private lazy var initialisedView: EmptyStateView = {
         let view = EmptyStateView()
-        view.imageView.image = UIImage(systemName: "pills.circle")
         view.imageView.tintColor =  .weakText
         
         switch searchType {
         case .medical:
+            view.imageView.image = UIImage(systemName: "cross.case")
             view.titleLabel.text = "医療用医薬品を検索する"
             view.messageLabel.text = "病院やクリニックで処方される\n薬を検索します"
         case .otc:
+            view.imageView.image = UIImage(systemName: "pills")
             view.titleLabel.text = "一般用医薬品を検索する"
             view.messageLabel.text = "薬局やドラッグストアで買える\n薬を検索します"
         case .none:

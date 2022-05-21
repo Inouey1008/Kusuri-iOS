@@ -9,7 +9,11 @@ import UIKit
 import SnapKit
 
 final class EmptyStateView: UIView {
-    var imageView = UIImageView()
+    var imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
     
     var titleLabel: UILabel = {
         let label = UILabel()
