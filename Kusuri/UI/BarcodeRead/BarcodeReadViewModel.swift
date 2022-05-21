@@ -16,28 +16,38 @@ final class BarcodeReadViewModel {
     
     struct Input {
         let barcode: Driver<VNBarcodeObservation>
-//        let reStartButtonClicked: Signal<()>
+        let showDetailButtonTapped: Signal<()>
+        let reStartButtonTapped: Signal<()>
     }
-
+    
     struct Output {
         let url: Driver<String?>
-        let resultIsHidden: Driver<Bool>
     }
     
     func transform(input: Input) -> Output {
-        let url = input.barcode
-            .filter { barcode in
-                return barcode.symbology == .gs1DataBarLimited || barcode.symbology == .gs1DataBar
-            }
-            .map { barcode -> String? in
-                return barcode.payloadStringValue
-            }
+        let gs1Barcode = input.barcode
+            .filter({ VNBarcodeObservation in
+                VNBarcodeObservation.symbology == .gs1DataBarLimited ||
+                VNBarcodeObservation.symbology == .gs1DataBar
+            })
         
-        let resultIsHidden = url.map { $0 == nil }
+        let url = gs1Barcode
+            .map({ VNBarcodeObservation in
+                VNBarcodeObservation.payloadStringValue
+            })
+            .asDriver()
+        
+        input.showDetailButtonTapped
+            .asObservable()
+            .withLatestFrom(url)
+            .subscribe(with: self, onNext: { Object, String in
+                let url = "https://www.pmda.go.jp/PmdaSearch/bookSearch/01/\(String!.dropFirst(2))"
+                Object.router.showWebView(title: "添付文書", url: url)
+            })
+            .disposed(by: disposeBag)
         
         return Output(
-            url: url,
-            resultIsHidden: resultIsHidden
+            url: url
         )
     }
 }

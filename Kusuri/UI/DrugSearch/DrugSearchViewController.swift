@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 import XLPagerTabStrip
 
-class DrugSearchViewController: UIViewController {
+final class DrugSearchViewController: UIViewController {
     private let disposeBag = DisposeBag()
     var viewModel: DrugSearchViewModel!
     var searchType: SearchType!

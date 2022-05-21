@@ -25,4 +25,11 @@ final class BarcodeReadRouter {
         view.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         return UINavigationController(rootViewController: view)
     }
+    
+    func showWebView(title: String , url: String) {
+        guard let url = URL(string: url) else { return }
+        let webView = ModalPresentationWebView(title: title, url: url)
+        webView.modalPresentationStyle = .fullScreen
+        view.present(webView, animated: true, completion: nil)
+    }
 }
