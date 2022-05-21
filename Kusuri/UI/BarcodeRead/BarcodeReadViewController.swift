@@ -18,16 +18,17 @@ final class BarcodeReadViewController: UIViewController {
     private lazy var textLayer: CATextLayer = {
         var layer = CATextLayer()
         layer.contentsScale = UIScreen.main.scale
-        layer.fontSize = 20
+        layer.fontSize = UIDevice.current.separateValue(forPad: 25, forPhone: 16)
         layer.alignmentMode = CATextLayerAlignmentMode.center
-        layer.frame = CGRect(x: self.view.frame.width * 0.4 - 100, y: self.view.frame.height * 0.2 - 12, width: 200, height: 24)
-        layer.cornerRadius = 4
+        layer.cornerRadius = UIDevice.current.separateValue(forPad: 8, forPhone: 4)
         layer.backgroundColor = UIColor(white: 0.25, alpha: 0.5).cgColor
+        layer.string = "バーコードを読み取りました👍"
         layer.isHidden = true
         return layer
     }()
     
     private let previewArea = UIView()
+    private let descriptionArea = UIView()
     
     private lazy var previewLayer: AVCaptureVideoPreviewLayer = {
         let layer = AVCaptureVideoPreviewLayer()
@@ -36,28 +37,20 @@ final class BarcodeReadViewController: UIViewController {
         return layer
     }()
     
-    private let descriptionArea: UIView = {
-        let view = UIView()
-        view.backgroundColor = .clear
-        view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor.gray.cgColor
-        return view
-    }()
-    
-    private let captureDiscriptionArea: UIStackView = {
+    private let captureDiscriptionStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.alignment = .center
         stackView.axis = .vertical
-        stackView.spacing = UIDevice.current.separateValue(forPad: 88, forPhone: 44)
-        stackView.distribution = .equalSpacing
+        stackView.spacing = UIDevice.current.separateValue(forPad: 44, forPhone: 24)
+        stackView.distribution = .equalCentering
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.isHidden = false
         return stackView
     }()
     
-    private let barcodeLabel1: UILabel = {
+    private let discriptionLabel1: UILabel = {
         let label = UILabel()
-        label.text = "バーコードを撮影枠内に映してください。"
+        label.text = "バーコードを撮影枠内に映してください"
         label.textColor = .text
         label.font = .mediumRegular
         label.backgroundColor = .clear
@@ -66,9 +59,9 @@ final class BarcodeReadViewController: UIViewController {
         return label
     }()
     
-    private let barcodeLabel2: UILabel = {
+    private let discriptionLabel2: UILabel = {
         let label = UILabel()
-        label.text = "読み取りが成功すると、添付文書を閲覧できます。"
+        label.text = "読み取りが成功すると、添付文書を閲覧できます"
         label.textColor = .text
         label.font = .mediumLight
         label.backgroundColor = .clear
@@ -77,12 +70,12 @@ final class BarcodeReadViewController: UIViewController {
         return label
     }()
     
-    private let resultArea: UIStackView = {
+    private let caputureResultStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.alignment = .center
         stackView.axis = .vertical
-        stackView.spacing = UIDevice.current.separateValue(forPad: 88, forPhone: 36)
-        stackView.distribution = .equalSpacing
+        stackView.spacing = UIDevice.current.separateValue(forPad: 44, forPhone: 24)
+        stackView.distribution = .equalCentering
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.isHidden = true
         return stackView
@@ -121,10 +114,6 @@ final class BarcodeReadViewController: UIViewController {
     }
     
     private func addSubViews() {
-        view.layer.masksToBounds = true
-        view.addSubview(previewArea)
-        view.layer.addSublayer(previewLayer)
-        
         let titleLabel = UILabel()
         titleLabel.text = "バーコード"
         titleLabel.textColor = .strongText
@@ -135,37 +124,47 @@ final class BarcodeReadViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.isTranslucent = false
         
+        view.layer.masksToBounds = true
+        view.addSubview(previewArea)
+        view.addSubview(descriptionArea)
+        view.layer.addSublayer(previewLayer)
         previewLayer.addSublayer(textLayer)
         
-        view.addSubview(captureDiscriptionArea)
-        captureDiscriptionArea.addArrangedSubview(barcodeLabel1)
-        captureDiscriptionArea.addArrangedSubview(barcodeLabel2)
+        descriptionArea.addSubview(captureDiscriptionStackView)
+        captureDiscriptionStackView.addArrangedSubview(discriptionLabel1)
+        captureDiscriptionStackView.addArrangedSubview(discriptionLabel2)
         
-        view.addSubview(resultArea)
-        resultArea.addArrangedSubview(showDetailButton)
-        resultArea.addArrangedSubview(reStartButton)
+        descriptionArea.addSubview(caputureResultStackView)
+        caputureResultStackView.addArrangedSubview(showDetailButton)
+        caputureResultStackView.addArrangedSubview(reStartButton)
     }
     
     private func adjustLayout() {
         previewArea.snp.makeConstraints({ make in
             make.top.equalTo(view.safeAreaLayoutGuide)
-            make.bottom.equalTo(captureDiscriptionArea.snp.top).offset(-16)
+            make.bottom.equalTo(descriptionArea.snp.top)
             make.width.equalToSuperview()
         })
-
-        barcodeLabel1.snp.makeConstraints({ make in
+        descriptionArea.snp.makeConstraints({ make in
+            let height = UIDevice.current.separateValue(forPad: 300, forPhone: 200)
+            
+            make.height.equalTo(height)
+            make.width.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide)
+        })
+        
+        discriptionLabel1.snp.makeConstraints({ make in
             make.width.equalToSuperview()
         })
-        barcodeLabel2.snp.makeConstraints({ make in
+        discriptionLabel2.snp.makeConstraints({ make in
             make.width.equalToSuperview()
         })
-        captureDiscriptionArea.snp.makeConstraints({ make in
+        captureDiscriptionStackView.snp.makeConstraints({ make in
             let horizontalInset = UIDevice.current.separateValue(forPad: 88, forPhone: 22)
-            let bottomInset = UIDevice.current.separateValue(forPad: 88, forPhone: 44)
             make.left.right.equalToSuperview().inset(horizontalInset)
-            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(bottomInset)
+            make.center.equalToSuperview()
         })
-
+        
         showDetailButton.snp.makeConstraints({ make in
             make.height.equalTo(44)
             make.width.equalToSuperview()
@@ -174,28 +173,33 @@ final class BarcodeReadViewController: UIViewController {
             make.height.equalTo(44)
             make.width.equalToSuperview()
         })
-        resultArea.snp.makeConstraints({ make in
-            make.center.equalTo(captureDiscriptionArea)
+        caputureResultStackView.snp.makeConstraints({ make in
+            let horizontalInset = UIDevice.current.separateValue(forPad: 88, forPhone: 44)
+            make.center.equalToSuperview()
+            make.left.right.equalToSuperview().inset(horizontalInset)
         })
     }
     
     override func viewWillLayoutSubviews() {
         previewLayer.frame = previewArea.frame
+        
+        let height = UIDevice.current.separateValue(forPad: 35, forPhone: 28)
+        let width = UIDevice.current.separateValue(forPad: 400, forPhone: 270)
+        let x = Int(previewArea.center.x) - width/2
+        let y = Int(previewArea.center.y)
+        textLayer.frame = CGRect(x: x, y: y, width: width, height: height)
     }
     
     private func addActions() {
         reStartButton.rx.tap
-            .subscribe(onNext: { [weak self] in
-                guard let self = self else { return }
-                self.barcodeReader.setupCamera()
-                self.hideTextLayer()
+            .subscribe(with: self, onNext: { Object, _ in
+                Object.barcodeReader.setupCamera()
             })
             .disposed(by: disposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        hideTextLayer()
         barcodeReader.setupCamera()
     }
     
@@ -212,12 +216,19 @@ final class BarcodeReadViewController: UIViewController {
         )
         
         barcodeReader.sessionRunning
-            .drive(resultArea.rx.isHidden)
+            .drive(caputureResultStackView.rx.isHidden)
             .disposed(by: disposeBag)
 
         barcodeReader.sessionRunning
             .map { !$0 }
-            .drive(captureDiscriptionArea.rx.isHidden)
+            .drive(captureDiscriptionStackView.rx.isHidden)
+            .disposed(by: disposeBag)
+        
+        barcodeReader.sessionRunning
+            .asObservable()
+            .subscribe(with: self, onNext: { Object, Bool in
+                Object.textLayer.isHidden = Bool
+            })
             .disposed(by: disposeBag)
         
         let output = viewModel.transform(input: input)
@@ -225,18 +236,10 @@ final class BarcodeReadViewController: UIViewController {
         output.url.asObservable()
             .filter { $0 != nil }
             .subscribe(with: self, onNext: { Object, String in
-                Object.showTextLayer(String!)
                 AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
                 Object.barcodeReader.quitSession()
             })
             .disposed(by: disposeBag)
-    }
-    
-    private func showTextLayer(_ value: String) {
-        DispatchQueue.main.async {
-            self.textLayer.string = value
-            self.textLayer.isHidden = false
-        }
     }
     
     private func hideTextLayer() {
