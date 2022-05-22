@@ -7,6 +7,7 @@
 
 import UIKit
 import Siren
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupVersionUpdateNotification()
         setupNavigationBar()
         setupTabBar()
+        setupFirebase()
         setupWindow()
-        print(Date())
         return true
     }
     
@@ -82,6 +83,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = MainTabRouter.generate()
         window?.makeKeyAndVisible()
+    }
+    
+    private func setupFirebase() {
+        #if DEBUG
+        let firebasePlistName = "GoogleService-Info-debug"
+        #else
+        let firebasePlistName = "GoogleService-Info"
+        #endif
+        
+        if let file = Bundle.main.path(forResource: firebasePlistName, ofType: "plist"), let options = FirebaseOptions(contentsOfFile: file) {
+            FirebaseApp.configure(options: options)
+        }
     }
     
     private func setupVersionUpdateNotification() {
