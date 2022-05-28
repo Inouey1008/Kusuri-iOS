@@ -17,7 +17,7 @@ final class BarcodeReadViewModel {
     struct Input {
         let barcode: Driver<VNBarcodeObservation>
         let showDetailButtonTapped: Signal<()>
-        let reStartButtonTapped: Signal<()>
+        let cameraSettingButtonTapped: Signal<()>
     }
     
     struct Output {
@@ -43,6 +43,13 @@ final class BarcodeReadViewModel {
             .subscribe(with: self, onNext: { Object, String in
                 let url = "https://www.pmda.go.jp/PmdaSearch/bookSearch/01/\(String!.dropFirst(2))"
                 Object.router.showWebView(title: "添付文書", url: url)
+            })
+            .disposed(by: disposeBag)
+        
+        input.cameraSettingButtonTapped
+            .asObservable()
+            .subscribe(with: self, onNext: { Object, _ in
+                Object.router.showSetting()
             })
             .disposed(by: disposeBag)
         

@@ -46,7 +46,7 @@
 		86AA71E6282A968900A969D6 /* DrugSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71DB282A968900A969D6 /* DrugSearchViewModel.swift */; };
 		86AA71E7282A968900A969D6 /* DrugInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71DC282A968900A969D6 /* DrugInfoCell.swift */; };
 		86AA71E8282A968900A969D6 /* DrugSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71DD282A968900A969D6 /* DrugSearchViewController.swift */; };
-		86AA71FB282A972300A969D6 /* DrugInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F1282A972300A969D6 /* DrugInfoResponse.swift */; };
+		86AA71FB282A972300A969D6 /* DrugInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F1282A972300A969D6 /* DrugInfoEntity.swift */; };
 		86AA71FC282A972300A969D6 /* DrugInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F2282A972300A969D6 /* DrugInfo.swift */; };
 		86AA71FD282A972300A969D6 /* DrugInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */; };
 		86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */; };
@@ -73,6 +73,7 @@
 		86D5B8672839C66E00C76218 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8662839C66E00C76218 /* FirebaseRemoteConfigSwift */; };
 		86D5B8692839C66E00C76218 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8682839C66E00C76218 /* FirebaseStorage */; };
 		86D5B86B2839C74E00C76218 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D5B86A2839C74E00C76218 /* GoogleService-Info.plist */; };
+		86D5B870283B022B00C76218 /* FavoriteUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D5B86F283B022B00C76218 /* FavoriteUsecase.swift */; };
 		B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,7 +115,7 @@
 		86821A2C2826DC8E005ABBDD /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		86821A2D2826DC8E005ABBDD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		86821A2E2826DC8E005ABBDD /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
-		86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = ../Extension/ActivityIndicator.swift; sourceTree = "<group>"; };
 		86821A302826DC8E005ABBDD /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		86821A312826DC8E005ABBDD /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		86821A322826DC8E005ABBDD /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
@@ -128,7 +129,7 @@
 		868D416F2827B8C70045702A /* BarcodeReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadViewController.swift; sourceTree = "<group>"; };
 		868D41702827B8C70045702A /* BarcodeReadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadViewModel.swift; sourceTree = "<group>"; };
 		868D41712827B8C70045702A /* BarcodeReadRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadRouter.swift; sourceTree = "<group>"; };
-		868D41752827B9560045702A /* BarcodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarcodeReader.swift; path = Kusuri/UI/BarcodeRead/BarcodeReader.swift; sourceTree = SOURCE_ROOT; };
+		868D41752827B9560045702A /* BarcodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarcodeReader.swift; path = Kusuri/Util/BarcodeReader.swift; sourceTree = SOURCE_ROOT; };
 		868D41772827CA740045702A /* Mintfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
 		868D41792827CE6E0045702A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
 		868D417C2827F4300045702A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -140,7 +141,7 @@
 		86AA71DB282A968900A969D6 /* DrugSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugSearchViewModel.swift; sourceTree = "<group>"; };
 		86AA71DC282A968900A969D6 /* DrugInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoCell.swift; sourceTree = "<group>"; };
 		86AA71DD282A968900A969D6 /* DrugSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugSearchViewController.swift; sourceTree = "<group>"; };
-		86AA71F1282A972300A969D6 /* DrugInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoResponse.swift; sourceTree = "<group>"; };
+		86AA71F1282A972300A969D6 /* DrugInfoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoEntity.swift; sourceTree = "<group>"; };
 		86AA71F2282A972300A969D6 /* DrugInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfo.swift; sourceTree = "<group>"; };
 		86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoAPI.swift; sourceTree = "<group>"; };
 		86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 		86BC56ED282777DD00A58841 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		86D5B84D2839C2C300C76218 /* GoogleService-Info-debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-debug.plist"; sourceTree = "<group>"; };
 		86D5B86A2839C74E00C76218 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86D5B86F283B022B00C76218 /* FavoriteUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsecase.swift; sourceTree = "<group>"; };
 		A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KusuriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8402451325C4E77047BF713 /* Pods_Kusuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -241,7 +243,8 @@
 				86AA71FE282A9ECC00A969D6 /* Domain */,
 				86AA71E9282A972300A969D6 /* Data */,
 				86821A242826D9F8005ABBDD /* Resource */,
-				86821A372826DC8E005ABBDD /* Util */,
+				86D5B86E283AFE3100C76218 /* Util */,
+				86821A372826DC8E005ABBDD /* Extension */,
 			);
 			path = Kusuri;
 			sourceTree = "<group>";
@@ -276,13 +279,12 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		86821A372826DC8E005ABBDD /* Util */ = {
+		86821A372826DC8E005ABBDD /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				86821A2C2826DC8E005ABBDD /* Date.swift */,
 				86821A2D2826DC8E005ABBDD /* UIColor.swift */,
 				86821A2E2826DC8E005ABBDD /* NSObject.swift */,
-				86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */,
 				86821A302826DC8E005ABBDD /* UIDevice.swift */,
 				86821A312826DC8E005ABBDD /* UITextField.swift */,
 				864B7435282D59E500B57B99 /* UITraitCollection.swift */,
@@ -292,8 +294,8 @@
 				86821A352826DC8E005ABBDD /* UIFont.swift */,
 				86821A362826DC8E005ABBDD /* UIControl.swift */,
 			);
-			name = Util;
-			path = "/Users/yusukeinoue/Develop/Kusuri-iOS/Kusuri/Util";
+			name = Extension;
+			path = "/Users/yusukeinoue/Develop/Kusuri-iOS/Kusuri/Extension";
 			sourceTree = "<absolute>";
 		};
 		868D41642827A9B60045702A /* Font */ = {
@@ -309,7 +311,6 @@
 		868D416E2827B8C70045702A /* BarcodeRead */ = {
 			isa = PBXGroup;
 			children = (
-				868D41752827B9560045702A /* BarcodeReader.swift */,
 				868D416F2827B8C70045702A /* BarcodeReadViewController.swift */,
 				868D41702827B8C70045702A /* BarcodeReadViewModel.swift */,
 				868D41712827B8C70045702A /* BarcodeReadRouter.swift */,
@@ -351,8 +352,7 @@
 		86AA71EF282A972300A969D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				86AA71F1282A972300A969D6 /* DrugInfoResponse.swift */,
-				86AA71F2282A972300A969D6 /* DrugInfo.swift */,
+				86AA71F1282A972300A969D6 /* DrugInfoEntity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,7 +368,9 @@
 		86AA71FE282A9ECC00A969D6 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				8661409928301A28004B1A94 /* SearchType.swift */,
+				86D5B871283B029A00C76218 /* Model */,
+				86D5B872283B02B000C76218 /* Enum */,
+				86D5B873283B02BE00C76218 /* Usecase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -417,6 +419,39 @@
 				86BC56ED282777DD00A58841 /* EmptyStateView.swift */,
 			);
 			path = UIParts;
+			sourceTree = "<group>";
+		};
+		86D5B86E283AFE3100C76218 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				868D41752827B9560045702A /* BarcodeReader.swift */,
+				86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		86D5B871283B029A00C76218 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86AA71F2282A972300A969D6 /* DrugInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86D5B872283B02B000C76218 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				8661409928301A28004B1A94 /* SearchType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		86D5B873283B02BE00C76218 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				86D5B86F283B022B00C76218 /* FavoriteUsecase.swift */,
+			);
+			path = Usecase;
 			sourceTree = "<group>";
 		};
 		9C2C080F1550107C0B7D7974 /* Pods */ = {
@@ -603,7 +638,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		0AAC9176DB15452FED002F05 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -677,7 +712,8 @@
 		};
 		86D5B86C2839C8E000C76218 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -783,7 +819,8 @@
 				86AA71E7282A968900A969D6 /* DrugInfoCell.swift in Sources */,
 				8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */,
 				86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */,
-				86AA71FB282A972300A969D6 /* DrugInfoResponse.swift in Sources */,
+				86AA71FB282A972300A969D6 /* DrugInfoEntity.swift in Sources */,
+				86D5B870283B022B00C76218 /* FavoriteUsecase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

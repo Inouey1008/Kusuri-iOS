@@ -32,4 +32,9 @@ final class BarcodeReadRouter {
         webView.modalPresentationStyle = .fullScreen
         view.present(webView, animated: true, completion: nil)
     }
+    
+    func showSetting() {
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString ) else { return }
+        UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
+    }
 }

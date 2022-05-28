@@ -51,8 +51,8 @@ final class BarcodeReadViewController: UIViewController {
     private let discriptionLabel1: UILabel = {
         let label = UILabel()
         label.text = "バーコードを撮影枠内に映してください"
-        label.textColor = .text
-        label.font = .mediumRegular
+        label.textColor = .weakText
+        label.font = .largeRegular
         label.backgroundColor = .clear
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -62,7 +62,7 @@ final class BarcodeReadViewController: UIViewController {
     private let discriptionLabel2: UILabel = {
         let label = UILabel()
         label.text = "読み取りが成功すると、添付文書を閲覧できます"
-        label.textColor = .text
+        label.textColor = .weakText
         label.font = .mediumLight
         label.backgroundColor = .clear
         label.textAlignment = .center
@@ -84,6 +84,7 @@ final class BarcodeReadViewController: UIViewController {
     private let showDetailButton: UIButton = {
         let button = UIButton(type: .roundedRect)
         button.setTitle("添付文書を見る", for: .normal)
+        button.titleLabel?.font = .mediumRegular
         button.backgroundColor = .primary
         button.tintColor = .white
         button.layer.cornerRadius = 22
@@ -93,9 +94,57 @@ final class BarcodeReadViewController: UIViewController {
     private let reStartButton: UIButton = {
         let button = UIButton(type: .roundedRect)
         button.setTitle("もう一度読み取る", for: .normal)
+        button.titleLabel?.font = .mediumRegular
         button.backgroundColor = .clear
         button.layer.borderColor = UIColor.primary.cgColor
         button.layer.borderWidth = 2
+        button.layer.cornerRadius = 22
+        return button
+    }()
+    
+    private let cameraSettingView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .backgroundCover
+        view.isHidden = true
+        return view
+    }()
+    
+    var cameraSettingImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(systemName: "camera")
+        imageView.tintColor =  .weakText
+        return imageView
+    }()
+    
+    private let cameraSettingLabel1: UILabel = {
+        let label = UILabel()
+        label.text = "カメラへのアクセスが許可されていません"
+        label.textColor = .weakText
+        label.font = .largeRegular
+        label.backgroundColor = .clear
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private let cameraSettingLabel2: UILabel = {
+        let label = UILabel()
+        label.text = "バーコードの読み取りに必要です"
+        label.textColor = .weakText
+        label.font = .mediumLight
+        label.backgroundColor = .clear
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private let cameraSettingButton: UIButton = {
+        let button = UIButton(type: .roundedRect)
+        button.setTitle("カメラ設定を開く", for: .normal)
+        button.titleLabel?.font = .mediumRegular
+        button.backgroundColor = .primary
+        button.tintColor = .white
         button.layer.cornerRadius = 22
         return button
     }()
@@ -127,6 +176,7 @@ final class BarcodeReadViewController: UIViewController {
         view.layer.masksToBounds = true
         view.addSubview(previewArea)
         view.addSubview(descriptionArea)
+        view.addSubview(cameraSettingView)
         view.layer.addSublayer(previewLayer)
         previewLayer.addSublayer(textLayer)
         
@@ -137,6 +187,11 @@ final class BarcodeReadViewController: UIViewController {
         descriptionArea.addSubview(caputureResultStackView)
         caputureResultStackView.addArrangedSubview(showDetailButton)
         caputureResultStackView.addArrangedSubview(reStartButton)
+
+        cameraSettingView.addSubview(cameraSettingImageView)
+        cameraSettingView.addSubview(cameraSettingLabel1)
+        cameraSettingView.addSubview(cameraSettingLabel2)
+        cameraSettingView.addSubview(cameraSettingButton)
     }
     
     private func adjustLayout() {
@@ -174,13 +229,47 @@ final class BarcodeReadViewController: UIViewController {
             make.width.equalToSuperview()
         })
         caputureResultStackView.snp.makeConstraints({ make in
-            let horizontalInset = UIDevice.current.separateValue(forPad: 88, forPhone: 44)
+            let horizontalInset = UIDevice.current.separateValue(forPad: 100, forPhone: 44)
             make.center.equalToSuperview()
             make.left.right.equalToSuperview().inset(horizontalInset)
         })
+        
+        cameraSettingView.snp.makeConstraints({ make in
+            make.edges.equalToSuperview()
+        })
+        cameraSettingImageView.snp.makeConstraints({ make in
+            let bottomOffset = UIDevice.current.separateValue(forPad: -60, forPhone: -40)
+            let heightWidth = UIDevice.current.separateValue(forPad: 100, forPhone: 75)
+            
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(cameraSettingLabel1.snp.top).offset(bottomOffset)
+            make.height.width.equalTo(heightWidth)
+        })
+        cameraSettingLabel1.snp.makeConstraints({ make in
+            let horizontalInset = UIDevice.current.separateValue(forPad: 60, forPhone: 30)
+
+            make.center.equalToSuperview()
+            make.left.right.equalToSuperview().inset(horizontalInset)
+        })
+        cameraSettingLabel2.snp.makeConstraints({ make in
+            let topOffset = UIDevice.current.separateValue(forPad: 60, forPhone: 30)
+            let horizontalInset = UIDevice.current.separateValue(forPad: 60, forPhone: 30)
+
+            make.top.equalTo(cameraSettingLabel1.snp.bottom).offset(topOffset)
+            make.centerX.equalToSuperview()
+            make.left.right.equalToSuperview().inset(horizontalInset)
+        })
+        cameraSettingButton.snp.makeConstraints({ make in
+            let horizontalInset = UIDevice.current.separateValue(forPad: 100, forPhone: 44)
+            let topOffset = UIDevice.current.separateValue(forPad: 80, forPhone: 30)
+            
+            make.top.equalTo(cameraSettingLabel2.snp.bottom).offset(topOffset)
+            make.left.right.equalToSuperview().inset(horizontalInset)
+            make.height.equalTo(44)
+        })
     }
-    
-    override func viewWillLayoutSubviews() {
+        
+    override func viewDidLayoutSubviews() {
         previewLayer.frame = previewArea.frame
         
         let height = UIDevice.current.separateValue(forPad: 35, forPhone: 28)
@@ -188,6 +277,7 @@ final class BarcodeReadViewController: UIViewController {
         let x = Int(previewArea.center.x) - width/2
         let y = Int(previewArea.center.y)
         textLayer.frame = CGRect(x: x, y: y, width: width, height: height)
+        barcodeReader.setupCamera()
     }
     
     private func addActions() {
@@ -200,6 +290,7 @@ final class BarcodeReadViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        cameraSettingView.isHidden = AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized
         barcodeReader.setupCamera()
     }
     
@@ -212,7 +303,7 @@ final class BarcodeReadViewController: UIViewController {
         let input = BarcodeReadViewModel.Input(
             barcode: barcodeReader.barcodeObservable,
             showDetailButtonTapped: showDetailButton.rx.tap.asSignal(),
-            reStartButtonTapped: reStartButton.rx.tap.asSignal()
+            cameraSettingButtonTapped: cameraSettingButton.rx.tap.asSignal()
         )
         
         barcodeReader.sessionRunning
@@ -231,6 +322,12 @@ final class BarcodeReadViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
+        NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification)
+            .subscribe(with: self, onNext: { Object, _ in
+                Object.cameraSettingView.isHidden = AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized
+            })
+            .disposed(by: disposeBag)
+
         let output = viewModel.transform(input: input)
         
         output.url.asObservable()
@@ -240,11 +337,5 @@ final class BarcodeReadViewController: UIViewController {
                 Object.barcodeReader.quitSession()
             })
             .disposed(by: disposeBag)
-    }
-    
-    private func hideTextLayer() {
-        DispatchQueue.main.async {
-            self.textLayer.isHidden = true
-        }
     }
 }
