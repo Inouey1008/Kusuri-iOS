@@ -13,7 +13,8 @@ target 'Kusuri' do
   pod 'Siren'
   pod 'Alamofire'
   pod 'SwiftSoup'
-
+  pod 'ReachabilitySwift'
+  
   # Pods for Kusuri
 
   target 'KusuriTests' do
