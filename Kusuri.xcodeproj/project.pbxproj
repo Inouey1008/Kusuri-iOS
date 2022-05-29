@@ -49,6 +49,12 @@
 		86AA71FB282A972300A969D6 /* DrugInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F1282A972300A969D6 /* DrugInfoEntity.swift */; };
 		86AA71FC282A972300A969D6 /* DrugInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F2282A972300A969D6 /* DrugInfo.swift */; };
 		86AA71FD282A972300A969D6 /* DrugInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */; };
+		86AC576128427E75007C0E07 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC576028427E75007C0E07 /* TargetType.swift */; };
+		86AC5763284324AD007C0E07 /* GetMedicalDrugInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC5762284324AD007C0E07 /* GetMedicalDrugInfo.swift */; };
+		86AC576528432708007C0E07 /* GetOtcDrugInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC576428432708007C0E07 /* GetOtcDrugInfo.swift */; };
+		86AC576828436932007C0E07 /* MedicalDrugHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC576728436932007C0E07 /* MedicalDrugHtmlParser.swift */; };
+		86AC576A284373A1007C0E07 /* OtcDrugHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC5769284373A1007C0E07 /* OtcDrugHtmlParser.swift */; };
+		86AC576C28437613007C0E07 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC576B28437613007C0E07 /* APIConstants.swift */; };
 		86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */; };
 		86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DB2826EEC600A58841 /* MainTabViewController.swift */; };
 		86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DC2826EEC600A58841 /* MainTabRouter.swift */; };
@@ -144,6 +150,12 @@
 		86AA71F1282A972300A969D6 /* DrugInfoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoEntity.swift; sourceTree = "<group>"; };
 		86AA71F2282A972300A969D6 /* DrugInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfo.swift; sourceTree = "<group>"; };
 		86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoAPI.swift; sourceTree = "<group>"; };
+		86AC576028427E75007C0E07 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		86AC5762284324AD007C0E07 /* GetMedicalDrugInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMedicalDrugInfo.swift; sourceTree = "<group>"; };
+		86AC576428432708007C0E07 /* GetOtcDrugInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOtcDrugInfo.swift; sourceTree = "<group>"; };
+		86AC576728436932007C0E07 /* MedicalDrugHtmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MedicalDrugHtmlParser.swift; path = Kusuri/Data/API/MedicalDrugHtmlParser.swift; sourceTree = SOURCE_ROOT; };
+		86AC5769284373A1007C0E07 /* OtcDrugHtmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtcDrugHtmlParser.swift; sourceTree = "<group>"; };
+		86AC576B28437613007C0E07 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
 		86BC56DB2826EEC600A58841 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		86BC56DC2826EEC600A58841 /* MainTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabRouter.swift; sourceTree = "<group>"; };
@@ -361,6 +373,12 @@
 			isa = PBXGroup;
 			children = (
 				86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */,
+				86AC576728436932007C0E07 /* MedicalDrugHtmlParser.swift */,
+				86AC576B28437613007C0E07 /* APIConstants.swift */,
+				86AC5769284373A1007C0E07 /* OtcDrugHtmlParser.swift */,
+				86AC5762284324AD007C0E07 /* GetMedicalDrugInfo.swift */,
+				86AC576428432708007C0E07 /* GetOtcDrugInfo.swift */,
+				86AC576028427E75007C0E07 /* TargetType.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -802,6 +820,7 @@
 				86BC56E72827742900A58841 /* MenuSectionModel.swift in Sources */,
 				86821A3E2826DCC6005ABBDD /* UITableViewCell.swift in Sources */,
 				86821A3F2826DCC6005ABBDD /* String.swift in Sources */,
+				86AC576128427E75007C0E07 /* TargetType.swift in Sources */,
 				86821A402826DCC6005ABBDD /* UIImage.swift in Sources */,
 				86AA71FC282A972300A969D6 /* DrugInfo.swift in Sources */,
 				86BC56F0282777DD00A58841 /* IndicatorView.swift in Sources */,
@@ -813,14 +832,19 @@
 				86AA71E1282A968900A969D6 /* SearchPageTabViewController.swift in Sources */,
 				86AA71E3282A968900A969D6 /* SearchPageTabRouter.swift in Sources */,
 				86BC56E82827742900A58841 /* MenuViewController.swift in Sources */,
+				86AC576A284373A1007C0E07 /* OtcDrugHtmlParser.swift in Sources */,
 				86821A422826DCC6005ABBDD /* UIControl.swift in Sources */,
 				86AA71E6282A968900A969D6 /* DrugSearchViewModel.swift in Sources */,
+				86AC5763284324AD007C0E07 /* GetMedicalDrugInfo.swift in Sources */,
 				86BC56E62827742900A58841 /* MenuViewModel.swift in Sources */,
 				86AA71E7282A968900A969D6 /* DrugInfoCell.swift in Sources */,
 				8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */,
 				86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */,
+				86AC576528432708007C0E07 /* GetOtcDrugInfo.swift in Sources */,
+				86AC576C28437613007C0E07 /* APIConstants.swift in Sources */,
 				86AA71FB282A972300A969D6 /* DrugInfoEntity.swift in Sources */,
 				86D5B870283B022B00C76218 /* FavoriteUsecase.swift in Sources */,
+				86AC576828436932007C0E07 /* MedicalDrugHtmlParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

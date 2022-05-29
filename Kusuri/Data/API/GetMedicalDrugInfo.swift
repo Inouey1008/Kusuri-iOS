@@ -1,0 +1,89 @@
+//
+//  GetMedicalDrugInfo.swift
+//  Kusuri
+//
+//  Created by Yusuke Inoue on 2022/05/29.
+//
+
+import Foundation
+import Alamofire
+
+final class GetMedicalDrugInfo {
+    static func path() -> String {
+        return "/iyakuSearch/"
+    }
+
+    static var method: HTTPMethod {
+        return .post
+    }
+
+    static func parameters(keyword: String) -> [String: Any]? {
+        return [
+            "param1": "value1",
+            "param2": "value2",
+            "ListRows": 100,
+            "btnA.x": 0,
+            "btnA.y": 0,
+            "nameWord": keyword,
+            "iyakuHowtoNameSearchRadioValue": 1,
+            "howtoMatchRadioValue": 1,
+            "tglOpFlg": "",
+            "dispColumnsList[0]": 1,
+            "dispColumnsList[1]": 2,
+            "dispColumnsList[2]": 3,
+            "dispColumnsList[3]": 23,
+            "dispColumnsList[4]": 25,
+            "dispColumnsList[7]": 4,
+            "dispColumnsList[8]": 11,
+            "effectValue": "",
+            "infoindicationsorefficacy": "",
+            "infoindicationsorefficacyHowtoSearch": "and",
+            "warnings": "",
+            "warningsHowtoSearch": "and",
+            "contraindicationsAvoidedadministration": "",
+            "contraindicationsAvoidedadministrationHowtoSearch": "and",
+            "contraindicatedcombinationPrecautionsforcombination": "",
+            "contraindicatedcombinationPrecautionsforcombinationHowtoSearch": "and",
+            "updateDocFrDt": "年月日 [YYYYMMDD]",
+            "updateDocToDt": "年月日 [YYYYMMDD]",
+            "compNameWord": "",
+            "iyakuKoumokuSelectSwitchRadio": 2,
+            "isNewReleaseDisp": "true",
+            "koumoku1Value": "",
+            "koumoku1Word": "",
+            "koumoku1HowtoSearch": "and",
+            "koumoku2Value": "",
+            "koumoku2Word": "",
+            "koumoku2HowtoSearch": "and",
+            "koumoku3Value": "",
+            "koumoku3Word": "",
+            "koumoku3HowtoSearch": "and",
+            "gs1code": "",
+            "howtoRdSearchSel": "or",
+            "relationDoc1Sel": "",
+            "relationDoc1check1": "on",
+            "relationDoc1check2": "on",
+            "relationDoc1Word": "検索語を入力",
+            "relationDoc1HowtoSearch": "and",
+            "relationDoc1FrDt": "年月 [YYYYMM]",
+            "relationDoc1ToDt": "年月 [YYYYMM]",
+            "relationDocHowtoSearchBetween12": "and",
+            "relationDoc2Sel": "",
+            "relationDoc2check1": "on",
+            "relationDoc2check2": "on",
+            "relationDoc2Word": "検索語を入力",
+            "relationDoc2HowtoSearch": "and",
+            "relationDoc2FrDt": "年月 [YYYYMM]",
+            "relationDoc2ToDt": "年月 [YYYYMM]",
+            "relationDocHowtoSearchBetween23": "and",
+            "relationDoc3Sel": "",
+            "relationDoc3check1": "on",
+            "relationDoc3check2": "on",
+            "relationDoc3Word": "検索語を入力",
+            "relationDoc3HowtoSearch": "and",
+            "relationDoc3FrDt": "年月 [YYYYMM]",
+            "relationDoc3ToDt": "年月 [YYYYMM]",
+            "listCategory": ""
+        ]
+    }
+}
