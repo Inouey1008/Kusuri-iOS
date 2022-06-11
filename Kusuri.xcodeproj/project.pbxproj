@@ -79,7 +79,6 @@
 		86D5B8672839C66E00C76218 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8662839C66E00C76218 /* FirebaseRemoteConfigSwift */; };
 		86D5B8692839C66E00C76218 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8682839C66E00C76218 /* FirebaseStorage */; };
 		86D5B86B2839C74E00C76218 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D5B86A2839C74E00C76218 /* GoogleService-Info.plist */; };
-		86D5B870283B022B00C76218 /* FavoriteUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D5B86F283B022B00C76218 /* FavoriteUsecase.swift */; };
 		B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -167,7 +166,6 @@
 		86BC56ED282777DD00A58841 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		86D5B84D2839C2C300C76218 /* GoogleService-Info-debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-debug.plist"; sourceTree = "<group>"; };
 		86D5B86A2839C74E00C76218 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		86D5B86F283B022B00C76218 /* FavoriteUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteUsecase.swift; sourceTree = "<group>"; };
 		A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KusuriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8402451325C4E77047BF713 /* Pods_Kusuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,8 +371,8 @@
 			isa = PBXGroup;
 			children = (
 				86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */,
-				86AC576728436932007C0E07 /* MedicalDrugHtmlParser.swift */,
 				86AC576B28437613007C0E07 /* APIConstants.swift */,
+				86AC576728436932007C0E07 /* MedicalDrugHtmlParser.swift */,
 				86AC5769284373A1007C0E07 /* OtcDrugHtmlParser.swift */,
 				86AC5762284324AD007C0E07 /* GetMedicalDrugInfo.swift */,
 				86AC576428432708007C0E07 /* GetOtcDrugInfo.swift */,
@@ -388,7 +386,6 @@
 			children = (
 				86D5B871283B029A00C76218 /* Model */,
 				86D5B872283B02B000C76218 /* Enum */,
-				86D5B873283B02BE00C76218 /* Usecase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -462,14 +459,6 @@
 				8661409928301A28004B1A94 /* SearchType.swift */,
 			);
 			path = Enum;
-			sourceTree = "<group>";
-		};
-		86D5B873283B02BE00C76218 /* Usecase */ = {
-			isa = PBXGroup;
-			children = (
-				86D5B86F283B022B00C76218 /* FavoriteUsecase.swift */,
-			);
-			path = Usecase;
 			sourceTree = "<group>";
 		};
 		9C2C080F1550107C0B7D7974 /* Pods */ = {
@@ -843,7 +832,6 @@
 				86AC576528432708007C0E07 /* GetOtcDrugInfo.swift in Sources */,
 				86AC576C28437613007C0E07 /* APIConstants.swift in Sources */,
 				86AA71FB282A972300A969D6 /* DrugInfoEntity.swift in Sources */,
-				86D5B870283B022B00C76218 /* FavoriteUsecase.swift in Sources */,
 				86AC576828436932007C0E07 /* MedicalDrugHtmlParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

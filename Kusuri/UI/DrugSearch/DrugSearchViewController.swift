@@ -44,6 +44,15 @@ final class DrugSearchViewController: UIViewController {
         return view
     }()
     
+    private let noNetworkView: EmptyStateView = {
+        let view = EmptyStateView()
+        view.imageView.image = UIImage(systemName: "wifi.slash")
+        view.imageView.tintColor = .weakText
+        view.titleLabel.text = "インターネット接続がありません"
+        view.messageLabel.text = "良好な通信環境でもう一度お試しください"
+        return view
+    }()
+    
     private let indicatorView = IndicatorView()
     
     private let tableView: UITableView = {
@@ -102,6 +111,7 @@ final class DrugSearchViewController: UIViewController {
         view.addSubview(searchBar)
         view.addSubview(initialisedView)
         view.addSubview(emptyStateView)
+        view.addSubview(noNetworkView)
         view.addSubview(tableView)
         view.addSubview(indicatorView)
         
@@ -114,6 +124,7 @@ final class DrugSearchViewController: UIViewController {
         
         initialisedView.isHidden = false
         emptyStateView.isHidden = true
+        noNetworkView.isHidden = true
         tableView.isHidden = true
     }
     
@@ -141,6 +152,9 @@ final class DrugSearchViewController: UIViewController {
         emptyStateView.snp.makeConstraints({ make in
             make.center.edges.equalTo(tableView)
         })
+        noNetworkView.snp.makeConstraints({ make in
+            make.center.edges.equalTo(tableView)
+        })
         indicatorView.snp.makeConstraints({ make in
             make.edges.equalToSuperview()
         })
@@ -161,19 +175,24 @@ final class DrugSearchViewController: UIViewController {
             }
             .disposed(by: disposeBag)
      
-        output.listing
+        output.searchSuccess
             .map({ !$0 })
             .drive(tableView.rx.isHidden)
             .disposed(by: disposeBag)
         
-        output.initialised
+        output.initialized
             .map({ !$0 })
             .drive(initialisedView.rx.isHidden)
             .disposed(by: disposeBag)
         
-        output.empty
+        output.searchError
             .map({ !$0 })
             .drive(emptyStateView.rx.isHidden)
+            .disposed(by: disposeBag)
+        
+        output.networkError
+            .map({ !$0 })
+            .drive(noNetworkView.rx.isHidden)
             .disposed(by: disposeBag)
 
         output.searching

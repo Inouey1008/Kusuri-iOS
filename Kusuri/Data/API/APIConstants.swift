@@ -12,15 +12,15 @@ enum APIConstants {
     case getMedicalInfo(keyword: String)
     case getOtcInfo(keyword: String)
 
-    public var baseURL: String {
+    var baseURL: String {
         return "https://www.pmda.go.jp/PmdaSearch"
     }
 
-    public var headers: [String: String]? {
+    var headers: [String: String]? {
         return nil
     }
 
-    public var path: String {
+    var path: String {
         switch self {
         case .getMedicalInfo:
             return GetMedicalDrugInfo.path()
@@ -29,11 +29,11 @@ enum APIConstants {
         }
     }
     
-    public var url: URL {
+    var url: URL {
         return  URL(string: baseURL + path)!
     }
 
-    public var method: HTTPMethod {
+    var method: HTTPMethod {
         switch self {
         case .getMedicalInfo:
             return GetMedicalDrugInfo.method
@@ -42,7 +42,7 @@ enum APIConstants {
         }
     }
     
-    public var parameters: [String : Any]? {
+    var parameters: [String : Any]? {
         switch self {
         case let .getMedicalInfo(keyword):
             return GetMedicalDrugInfo.parameters(keyword: keyword)
