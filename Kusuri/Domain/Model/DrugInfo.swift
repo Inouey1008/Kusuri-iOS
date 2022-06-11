@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DrugInfo {
+final class DrugInfo: Equatable {
     var genericName: String
     var tradeName: String
     var company: String
@@ -18,5 +18,9 @@ class DrugInfo {
         self.tradeName = tradeName
         self.company = company
         self.url = url
+    }
+    
+    static func == (lhs: DrugInfo, rhs: DrugInfo) -> Bool {
+        return lhs.url == rhs.url && lhs.tradeName == rhs.tradeName && lhs.company == rhs.company && lhs.genericName == rhs.genericName
     }
 }

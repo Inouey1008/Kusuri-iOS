@@ -19,7 +19,8 @@ final class GetOtcDrugInfo {
 
     static func parameters(keyword: String) -> [String: Any]? {
         return [
-            "btnA.x": 0, "btnA.y": 0,
+            "btnA.x": 0,
+            "btnA.y": 0,
             "nameWord": keyword,
             "howtoMatchRadioValue": 1,
             "tglOpFlg": "",

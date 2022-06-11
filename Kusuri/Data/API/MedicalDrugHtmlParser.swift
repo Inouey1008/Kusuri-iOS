@@ -8,7 +8,7 @@
 import Foundation
 import SwiftSoup
 
-class MedicalDrugHtmlParser {
+final class MedicalDrugHtmlParser {
     private let html: String
     
     init(html: String) {
@@ -18,34 +18,64 @@ class MedicalDrugHtmlParser {
     func toDrugInfos() -> [DrugInfo] {
         var drugInfoes: [DrugInfo] = []
         
-        let docuent: Document = try! SwiftSoup.parse(self.html)
-        let resultList = try! docuent.select("#ResultList")[0].select("tr[class^=TrColor]")
-        
-        resultList.forEach { element in
-            let e = try! element.select("td")
-            var genericName = ""
-            var tradeName = ""
-            var company = ""
-            var url = ""
+        do {
+            let docuent: Document = try SwiftSoup.parse(self.html)
+            let resultList = try docuent.select("#ResultList")[0].select("tr[class^=TrColor]")
+            
+            resultList.forEach { element in
+                let element = try! element.select("td")
+                var genericName = ""
+                var tradeName = ""
+                var company = ""
+                var url = ""
 
-            e.enumerated().forEach { index, e in
-                switch index {
-                case 0:
-                    genericName = try! e.select("a[href~=/PmdaSearch/iyakuDetail/GeneralList.+]").text()
-                case 1:
-                    tradeName = try! e.text()
-                case 2:
-                    company = try! e.text()
-                case 3:
-                    url = try! "https://www.pmda.go.jp\(e.select("a[href~=/PmdaSearch/iyakuDetail/ResultDataSetPDF.+]").attr("href"))"
-                default: break
+                element.enumerated().forEach { index, element in
+                    switch index {
+                    case 0:
+                        do {
+                            genericName = try element.select("a[href~=/PmdaSearch/iyakuDetail/GeneralList.+]").text()
+                        } catch {
+                            print("!! genericName error")
+                        }
+                    case 1:
+                        do {
+                            tradeName = try element.text()
+                        } catch {
+                            print("!! tradeName error")
+                        }
+                    case 2:
+                        do {
+                            company = try element.text()
+                        } catch {
+                            print("!! company error")
+                        }
+                    case 3:
+                        do {
+                            url = try "https://www.pmda.go.jp\(element.select("a[href~=/PmdaSearch/iyakuDetail/ResultDataSetPDF.+]").attr("href"))"
+                        } catch {
+                            print("!! url error")
+                        }
+                    default:
+                        break
+                    }
                 }
-            }
-            if genericName == "" || url == "" { return }
+                
+                if genericName == "" || url == "" {
+                    return
+                }
 
-            let drugInfo = DrugInfo(genericName: genericName, tradeName: tradeName, company: company, url: url)
-            drugInfoes.append(drugInfo)
+                let drugInfo = DrugInfo(
+                    genericName: genericName,
+                    tradeName: tradeName,
+                    company: company,
+                    url: url
+                )
+                
+                drugInfoes.append(drugInfo)
+            }
+            return drugInfoes
+        } catch {
+            return drugInfoes
         }
-        return drugInfoes
     }
 }
