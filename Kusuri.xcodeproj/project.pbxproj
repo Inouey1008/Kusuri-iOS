@@ -1,0 +1,1276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D9242E5BA1F485F3B56FA97 /* Pods_Kusuri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8402451325C4E77047BF713 /* Pods_Kusuri.framework */; };
+		601A0789571E53CD4DBD09EC /* Pods_Kusuri_KusuriUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C3DB968E575C9190C2597 /* Pods_Kusuri_KusuriUITests.framework */; };
+		864B7436282D59E500B57B99 /* UITraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B7435282D59E500B57B99 /* UITraitCollection.swift */; };
+		8661409A28301A28004B1A94 /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8661409928301A28004B1A94 /* SearchType.swift */; };
+		8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5A42826C9180010CE7A /* AppDelegate.swift */; };
+		8676C5AE2826C91A0010CE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8676C5AD2826C91A0010CE7A /* Assets.xcassets */; };
+		8676C5B12826C91A0010CE7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8676C5AF2826C91A0010CE7A /* LaunchScreen.storyboard */; };
+		8676C5BC2826C91B0010CE7A /* KusuriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5BB2826C91B0010CE7A /* KusuriTests.swift */; };
+		8676C5C62826C91B0010CE7A /* KusuriUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5C52826C91B0010CE7A /* KusuriUITests.swift */; };
+		8676C5C82826C91B0010CE7A /* KusuriUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */; };
+		86821A382826DCC6005ABBDD /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2C2826DC8E005ABBDD /* Date.swift */; };
+		86821A392826DCC6005ABBDD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2D2826DC8E005ABBDD /* UIColor.swift */; };
+		86821A3A2826DCC6005ABBDD /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2E2826DC8E005ABBDD /* NSObject.swift */; };
+		86821A3B2826DCC6005ABBDD /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */; };
+		86821A3C2826DCC6005ABBDD /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A302826DC8E005ABBDD /* UIDevice.swift */; };
+		86821A3D2826DCC6005ABBDD /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A312826DC8E005ABBDD /* UITextField.swift */; };
+		86821A3E2826DCC6005ABBDD /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A322826DC8E005ABBDD /* UITableViewCell.swift */; };
+		86821A3F2826DCC6005ABBDD /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A332826DC8E005ABBDD /* String.swift */; };
+		86821A402826DCC6005ABBDD /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A342826DC8E005ABBDD /* UIImage.swift */; };
+		86821A412826DCC6005ABBDD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A352826DC8E005ABBDD /* UIFont.swift */; };
+		86821A422826DCC6005ABBDD /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86821A362826DC8E005ABBDD /* UIControl.swift */; };
+		868D416A2827A9B60045702A /* NotoSansJP-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41652827A9B60045702A /* NotoSansJP-Regular.otf */; };
+		868D416B2827A9B60045702A /* NotoSansJP-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41662827A9B60045702A /* NotoSansJP-Light.otf */; };
+		868D416C2827A9B60045702A /* NotoSansJP-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 868D41672827A9B60045702A /* NotoSansJP-Bold.otf */; };
+		868D41722827B8C70045702A /* BarcodeReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D416F2827B8C70045702A /* BarcodeReadViewController.swift */; };
+		868D41732827B8C70045702A /* BarcodeReadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41702827B8C70045702A /* BarcodeReadViewModel.swift */; };
+		868D41742827B8C70045702A /* BarcodeReadRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41712827B8C70045702A /* BarcodeReadRouter.swift */; };
+		868D41762827B9560045702A /* BarcodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D41752827B9560045702A /* BarcodeReader.swift */; };
+		868D41782827CA740045702A /* Mintfile in Resources */ = {isa = PBXBuildFile; fileRef = 868D41772827CA740045702A /* Mintfile */; };
+		868D417A2827CE6E0045702A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 868D41792827CE6E0045702A /* Settings.bundle */; };
+		868D417D2827F4300045702A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D417C2827F4300045702A /* Colors.xcassets */; };
+		86AA71DE282A968900A969D6 /* ModalPresentationWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71D1282A968800A969D6 /* ModalPresentationWebView.swift */; };
+		86AA71E1282A968900A969D6 /* SearchPageTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71D5282A968800A969D6 /* SearchPageTabViewController.swift */; };
+		86AA71E2282A968900A969D6 /* SearchPageTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71D6282A968800A969D6 /* SearchPageTabViewModel.swift */; };
+		86AA71E3282A968900A969D6 /* SearchPageTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71D7282A968800A969D6 /* SearchPageTabRouter.swift */; };
+		86AA71E5282A968900A969D6 /* DrugSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71DA282A968900A969D6 /* DrugSearchRouter.swift */; };
+		86AA71E6282A968900A969D6 /* DrugSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71DB282A968900A969D6 /* DrugSearchViewModel.swift */; };
+		86AA71E7282A968900A969D6 /* DrugInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71DC282A968900A969D6 /* DrugInfoCell.swift */; };
+		86AA71E8282A968900A969D6 /* DrugSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71DD282A968900A969D6 /* DrugSearchViewController.swift */; };
+		86AA71FB282A972300A969D6 /* DrugInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F1282A972300A969D6 /* DrugInfoEntity.swift */; };
+		86AA71FC282A972300A969D6 /* DrugInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F2282A972300A969D6 /* DrugInfo.swift */; };
+		86AA71FD282A972300A969D6 /* DrugInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */; };
+		86AC576128427E75007C0E07 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC576028427E75007C0E07 /* TargetType.swift */; };
+		86AC5763284324AD007C0E07 /* GetMedicalDrugInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC5762284324AD007C0E07 /* GetMedicalDrugInfo.swift */; };
+		86AC576528432708007C0E07 /* GetOtcDrugInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC576428432708007C0E07 /* GetOtcDrugInfo.swift */; };
+		86AC576828436932007C0E07 /* MedicalDrugHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC576728436932007C0E07 /* MedicalDrugHtmlParser.swift */; };
+		86AC576A284373A1007C0E07 /* OtcDrugHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC5769284373A1007C0E07 /* OtcDrugHtmlParser.swift */; };
+		86AC576C28437613007C0E07 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AC576B28437613007C0E07 /* APIConstants.swift */; };
+		86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */; };
+		86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DB2826EEC600A58841 /* MainTabViewController.swift */; };
+		86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56DC2826EEC600A58841 /* MainTabRouter.swift */; };
+		86BC56E52827742900A58841 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56E12827742900A58841 /* MenuRouter.swift */; };
+		86BC56E62827742900A58841 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56E22827742900A58841 /* MenuViewModel.swift */; };
+		86BC56E72827742900A58841 /* MenuSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56E32827742900A58841 /* MenuSectionModel.swift */; };
+		86BC56E82827742900A58841 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56E42827742900A58841 /* MenuViewController.swift */; };
+		86BC56F0282777DD00A58841 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56EB282777DD00A58841 /* IndicatorView.swift */; };
+		86BC56F2282777DD00A58841 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC56ED282777DD00A58841 /* EmptyStateView.swift */; };
+		86D5B84E2839C2C300C76218 /* GoogleService-Info-debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D5B84D2839C2C300C76218 /* GoogleService-Info-debug.plist */; };
+		86D5B8512839C66E00C76218 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8502839C66E00C76218 /* FirebaseAnalytics */; };
+		86D5B8532839C66E00C76218 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8522839C66E00C76218 /* FirebaseAnalyticsSwift */; };
+		86D5B8552839C66E00C76218 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8542839C66E00C76218 /* FirebaseAuth */; };
+		86D5B8572839C66E00C76218 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8562839C66E00C76218 /* FirebaseCrashlytics */; };
+		86D5B8592839C66E00C76218 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8582839C66E00C76218 /* FirebaseFirestore */; };
+		86D5B85B2839C66E00C76218 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B85A2839C66E00C76218 /* FirebaseFirestoreSwift */; };
+		86D5B85D2839C66E00C76218 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B85C2839C66E00C76218 /* FirebaseFunctions */; };
+		86D5B85F2839C66E00C76218 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B85E2839C66E00C76218 /* FirebaseInstallations */; };
+		86D5B8612839C66E00C76218 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8602839C66E00C76218 /* FirebaseMessaging */; };
+		86D5B8632839C66E00C76218 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8622839C66E00C76218 /* FirebasePerformance */; };
+		86D5B8652839C66E00C76218 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8642839C66E00C76218 /* FirebaseRemoteConfig */; };
+		86D5B8672839C66E00C76218 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8662839C66E00C76218 /* FirebaseRemoteConfigSwift */; };
+		86D5B8692839C66E00C76218 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 86D5B8682839C66E00C76218 /* FirebaseStorage */; };
+		86D5B86B2839C74E00C76218 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86D5B86A2839C74E00C76218 /* GoogleService-Info.plist */; };
+		B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8676C5B82826C91B0010CE7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8676C5992826C9180010CE7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8676C5A02826C9180010CE7A;
+			remoteInfo = Kusuri;
+		};
+		8676C5C22826C91B0010CE7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8676C5992826C9180010CE7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8676C5A02826C9180010CE7A;
+			remoteInfo = Kusuri;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		080990E516D7EFAE9136EDAD /* Pods-Kusuri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri/Pods-Kusuri.debug.xcconfig"; sourceTree = "<group>"; };
+		643871CD3284E426CBA872F3 /* Pods-Kusuri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri.release.xcconfig"; path = "Target Support Files/Pods-Kusuri/Pods-Kusuri.release.xcconfig"; sourceTree = "<group>"; };
+		6C13AABB6EE0F61000709F21 /* Pods-KusuriTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KusuriTests.debug.xcconfig"; path = "Target Support Files/Pods-KusuriTests/Pods-KusuriTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C3C3DB968E575C9190C2597 /* Pods_Kusuri_KusuriUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri_KusuriUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE323C47C34F3B1A6EE1954 /* Pods-KusuriTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KusuriTests.release.xcconfig"; path = "Target Support Files/Pods-KusuriTests/Pods-KusuriTests.release.xcconfig"; sourceTree = "<group>"; };
+		864B7435282D59E500B57B99 /* UITraitCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITraitCollection.swift; sourceTree = "<group>"; };
+		8661409928301A28004B1A94 /* SearchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
+		8676C5A12826C9180010CE7A /* Kusuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kusuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8676C5A42826C9180010CE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8676C5AD2826C91A0010CE7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8676C5B02826C91A0010CE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8676C5B22826C91A0010CE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8676C5B72826C91B0010CE7A /* KusuriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KusuriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8676C5BB2826C91B0010CE7A /* KusuriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriTests.swift; sourceTree = "<group>"; };
+		8676C5C12826C91B0010CE7A /* KusuriUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KusuriUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8676C5C52826C91B0010CE7A /* KusuriUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriUITests.swift; sourceTree = "<group>"; };
+		8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KusuriUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86821A2C2826DC8E005ABBDD /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		86821A2D2826DC8E005ABBDD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		86821A2E2826DC8E005ABBDD /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = ../Extension/ActivityIndicator.swift; sourceTree = "<group>"; };
+		86821A302826DC8E005ABBDD /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		86821A312826DC8E005ABBDD /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		86821A322826DC8E005ABBDD /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		86821A332826DC8E005ABBDD /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		86821A342826DC8E005ABBDD /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		86821A352826DC8E005ABBDD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		86821A362826DC8E005ABBDD /* UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
+		868D41652827A9B60045702A /* NotoSansJP-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Regular.otf"; sourceTree = "<group>"; };
+		868D41662827A9B60045702A /* NotoSansJP-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Light.otf"; sourceTree = "<group>"; };
+		868D41672827A9B60045702A /* NotoSansJP-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansJP-Bold.otf"; sourceTree = "<group>"; };
+		868D416F2827B8C70045702A /* BarcodeReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadViewController.swift; sourceTree = "<group>"; };
+		868D41702827B8C70045702A /* BarcodeReadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadViewModel.swift; sourceTree = "<group>"; };
+		868D41712827B8C70045702A /* BarcodeReadRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeReadRouter.swift; sourceTree = "<group>"; };
+		868D41752827B9560045702A /* BarcodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarcodeReader.swift; path = Kusuri/Util/BarcodeReader.swift; sourceTree = SOURCE_ROOT; };
+		868D41772827CA740045702A /* Mintfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
+		868D41792827CE6E0045702A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
+		868D417C2827F4300045702A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		86AA71D1282A968800A969D6 /* ModalPresentationWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresentationWebView.swift; sourceTree = "<group>"; };
+		86AA71D5282A968800A969D6 /* SearchPageTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPageTabViewController.swift; sourceTree = "<group>"; };
+		86AA71D6282A968800A969D6 /* SearchPageTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPageTabViewModel.swift; sourceTree = "<group>"; };
+		86AA71D7282A968800A969D6 /* SearchPageTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPageTabRouter.swift; sourceTree = "<group>"; };
+		86AA71DA282A968900A969D6 /* DrugSearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugSearchRouter.swift; sourceTree = "<group>"; };
+		86AA71DB282A968900A969D6 /* DrugSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugSearchViewModel.swift; sourceTree = "<group>"; };
+		86AA71DC282A968900A969D6 /* DrugInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoCell.swift; sourceTree = "<group>"; };
+		86AA71DD282A968900A969D6 /* DrugSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugSearchViewController.swift; sourceTree = "<group>"; };
+		86AA71F1282A972300A969D6 /* DrugInfoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoEntity.swift; sourceTree = "<group>"; };
+		86AA71F2282A972300A969D6 /* DrugInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfo.swift; sourceTree = "<group>"; };
+		86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugInfoAPI.swift; sourceTree = "<group>"; };
+		86AC576028427E75007C0E07 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		86AC5762284324AD007C0E07 /* GetMedicalDrugInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMedicalDrugInfo.swift; sourceTree = "<group>"; };
+		86AC576428432708007C0E07 /* GetOtcDrugInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOtcDrugInfo.swift; sourceTree = "<group>"; };
+		86AC576728436932007C0E07 /* MedicalDrugHtmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MedicalDrugHtmlParser.swift; path = Kusuri/Data/API/MedicalDrugHtmlParser.swift; sourceTree = SOURCE_ROOT; };
+		86AC5769284373A1007C0E07 /* OtcDrugHtmlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtcDrugHtmlParser.swift; sourceTree = "<group>"; };
+		86AC576B28437613007C0E07 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		86BC56DB2826EEC600A58841 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		86BC56DC2826EEC600A58841 /* MainTabRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabRouter.swift; sourceTree = "<group>"; };
+		86BC56E12827742900A58841 /* MenuRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		86BC56E22827742900A58841 /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		86BC56E32827742900A58841 /* MenuSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSectionModel.swift; sourceTree = "<group>"; };
+		86BC56E42827742900A58841 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		86BC56EB282777DD00A58841 /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		86BC56ED282777DD00A58841 /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		86D5B84D2839C2C300C76218 /* GoogleService-Info-debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-debug.plist"; sourceTree = "<group>"; };
+		86D5B86A2839C74E00C76218 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KusuriTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8402451325C4E77047BF713 /* Pods_Kusuri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kusuri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB886472EC7CBE977A54FF02 /* Pods-Kusuri-KusuriUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kusuri-KusuriUITests.release.xcconfig"; path = "Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8676C59E2826C9180010CE7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86D5B8632839C66E00C76218 /* FirebasePerformance in Frameworks */,
+				86D5B8532839C66E00C76218 /* FirebaseAnalyticsSwift in Frameworks */,
+				86D5B8512839C66E00C76218 /* FirebaseAnalytics in Frameworks */,
+				86D5B8652839C66E00C76218 /* FirebaseRemoteConfig in Frameworks */,
+				86D5B8612839C66E00C76218 /* FirebaseMessaging in Frameworks */,
+				86D5B8572839C66E00C76218 /* FirebaseCrashlytics in Frameworks */,
+				86D5B85F2839C66E00C76218 /* FirebaseInstallations in Frameworks */,
+				86D5B85D2839C66E00C76218 /* FirebaseFunctions in Frameworks */,
+				86D5B85B2839C66E00C76218 /* FirebaseFirestoreSwift in Frameworks */,
+				4D9242E5BA1F485F3B56FA97 /* Pods_Kusuri.framework in Frameworks */,
+				86D5B8552839C66E00C76218 /* FirebaseAuth in Frameworks */,
+				86D5B8692839C66E00C76218 /* FirebaseStorage in Frameworks */,
+				86D5B8592839C66E00C76218 /* FirebaseFirestore in Frameworks */,
+				86D5B8672839C66E00C76218 /* FirebaseRemoteConfigSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8676C5B42826C91B0010CE7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B337EEF94F765BB6FC4F37EE /* Pods_KusuriTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8676C5BE2826C91B0010CE7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601A0789571E53CD4DBD09EC /* Pods_Kusuri_KusuriUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8661409828301883004B1A94 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8676C5AF2826C91A0010CE7A /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		8676C5982826C9180010CE7A = {
+			isa = PBXGroup;
+			children = (
+				868D41772827CA740045702A /* Mintfile */,
+				868D41792827CE6E0045702A /* Settings.bundle */,
+				8676C5A32826C9180010CE7A /* Kusuri */,
+				8676C5BA2826C91B0010CE7A /* KusuriTests */,
+				8676C5C42826C91B0010CE7A /* KusuriUITests */,
+				8676C5A22826C9180010CE7A /* Products */,
+				9C2C080F1550107C0B7D7974 /* Pods */,
+				BA5FE01E77AF85A9B75C3072 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8676C5A22826C9180010CE7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8676C5A12826C9180010CE7A /* Kusuri.app */,
+				8676C5B72826C91B0010CE7A /* KusuriTests.xctest */,
+				8676C5C12826C91B0010CE7A /* KusuriUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8676C5A32826C9180010CE7A /* Kusuri */ = {
+			isa = PBXGroup;
+			children = (
+				8676C5A42826C9180010CE7A /* AppDelegate.swift */,
+				86BC56D82826EE6E00A58841 /* UI */,
+				86AA71FE282A9ECC00A969D6 /* Domain */,
+				86AA71E9282A972300A969D6 /* Data */,
+				86821A242826D9F8005ABBDD /* Resource */,
+				86D5B86E283AFE3100C76218 /* Util */,
+				86821A372826DC8E005ABBDD /* Extension */,
+			);
+			path = Kusuri;
+			sourceTree = "<group>";
+		};
+		8676C5BA2826C91B0010CE7A /* KusuriTests */ = {
+			isa = PBXGroup;
+			children = (
+				8676C5BB2826C91B0010CE7A /* KusuriTests.swift */,
+			);
+			path = KusuriTests;
+			sourceTree = "<group>";
+		};
+		8676C5C42826C91B0010CE7A /* KusuriUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8676C5C52826C91B0010CE7A /* KusuriUITests.swift */,
+				8676C5C72826C91B0010CE7A /* KusuriUITestsLaunchTests.swift */,
+			);
+			path = KusuriUITests;
+			sourceTree = "<group>";
+		};
+		86821A242826D9F8005ABBDD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8676C5B22826C91A0010CE7A /* Info.plist */,
+				86D5B86A2839C74E00C76218 /* GoogleService-Info.plist */,
+				86D5B84D2839C2C300C76218 /* GoogleService-Info-debug.plist */,
+				8676C5AD2826C91A0010CE7A /* Assets.xcassets */,
+				868D417C2827F4300045702A /* Colors.xcassets */,
+				868D41642827A9B60045702A /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		86821A372826DC8E005ABBDD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				86821A2C2826DC8E005ABBDD /* Date.swift */,
+				86821A2D2826DC8E005ABBDD /* UIColor.swift */,
+				86821A2E2826DC8E005ABBDD /* NSObject.swift */,
+				86821A302826DC8E005ABBDD /* UIDevice.swift */,
+				86821A312826DC8E005ABBDD /* UITextField.swift */,
+				864B7435282D59E500B57B99 /* UITraitCollection.swift */,
+				86821A322826DC8E005ABBDD /* UITableViewCell.swift */,
+				86821A332826DC8E005ABBDD /* String.swift */,
+				86821A342826DC8E005ABBDD /* UIImage.swift */,
+				86821A352826DC8E005ABBDD /* UIFont.swift */,
+				86821A362826DC8E005ABBDD /* UIControl.swift */,
+			);
+			name = Extension;
+			path = "/Users/yusukeinoue/Develop/Kusuri-iOS/Kusuri/Extension";
+			sourceTree = "<absolute>";
+		};
+		868D41642827A9B60045702A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				868D41652827A9B60045702A /* NotoSansJP-Regular.otf */,
+				868D41662827A9B60045702A /* NotoSansJP-Light.otf */,
+				868D41672827A9B60045702A /* NotoSansJP-Bold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		868D416E2827B8C70045702A /* BarcodeRead */ = {
+			isa = PBXGroup;
+			children = (
+				868D416F2827B8C70045702A /* BarcodeReadViewController.swift */,
+				868D41702827B8C70045702A /* BarcodeReadViewModel.swift */,
+				868D41712827B8C70045702A /* BarcodeReadRouter.swift */,
+			);
+			path = BarcodeRead;
+			sourceTree = "<group>";
+		};
+		86AA71D4282A968800A969D6 /* SearchPageTab */ = {
+			isa = PBXGroup;
+			children = (
+				86AA71D5282A968800A969D6 /* SearchPageTabViewController.swift */,
+				86AA71D6282A968800A969D6 /* SearchPageTabViewModel.swift */,
+				86AA71D7282A968800A969D6 /* SearchPageTabRouter.swift */,
+			);
+			path = SearchPageTab;
+			sourceTree = "<group>";
+		};
+		86AA71D9282A968900A969D6 /* DrugSearch */ = {
+			isa = PBXGroup;
+			children = (
+				86AA71DA282A968900A969D6 /* DrugSearchRouter.swift */,
+				86AA71DB282A968900A969D6 /* DrugSearchViewModel.swift */,
+				86AA71DD282A968900A969D6 /* DrugSearchViewController.swift */,
+				86AA71DC282A968900A969D6 /* DrugInfoCell.swift */,
+			);
+			path = DrugSearch;
+			sourceTree = "<group>";
+		};
+		86AA71E9282A972300A969D6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				86AA71EF282A972300A969D6 /* Model */,
+				86AA71F3282A972300A969D6 /* API */,
+			);
+			name = Data;
+			path = Kusuri/Data;
+			sourceTree = SOURCE_ROOT;
+		};
+		86AA71EF282A972300A969D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86AA71F1282A972300A969D6 /* DrugInfoEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86AA71F3282A972300A969D6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				86AA71F4282A972300A969D6 /* DrugInfoAPI.swift */,
+				86AC576B28437613007C0E07 /* APIConstants.swift */,
+				86AC576728436932007C0E07 /* MedicalDrugHtmlParser.swift */,
+				86AC5769284373A1007C0E07 /* OtcDrugHtmlParser.swift */,
+				86AC5762284324AD007C0E07 /* GetMedicalDrugInfo.swift */,
+				86AC576428432708007C0E07 /* GetOtcDrugInfo.swift */,
+				86AC576028427E75007C0E07 /* TargetType.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		86AA71FE282A9ECC00A969D6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				86D5B871283B029A00C76218 /* Model */,
+				86D5B872283B02B000C76218 /* Enum */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		86BC56D82826EE6E00A58841 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8661409828301883004B1A94 /* LaunchScreen */,
+				86AA71D9282A968900A969D6 /* DrugSearch */,
+				86AA71D4282A968800A969D6 /* SearchPageTab */,
+				86BC56D92826EEC600A58841 /* MainTab */,
+				868D416E2827B8C70045702A /* BarcodeRead */,
+				86BC56E02827742900A58841 /* Menu */,
+				86BC56E9282777DD00A58841 /* UIParts */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		86BC56D92826EEC600A58841 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				86BC56DB2826EEC600A58841 /* MainTabViewController.swift */,
+				86BC56DA2826EEC600A58841 /* MainTabViewModel.swift */,
+				86BC56DC2826EEC600A58841 /* MainTabRouter.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		86BC56E02827742900A58841 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				86BC56E32827742900A58841 /* MenuSectionModel.swift */,
+				86BC56E42827742900A58841 /* MenuViewController.swift */,
+				86BC56E22827742900A58841 /* MenuViewModel.swift */,
+				86BC56E12827742900A58841 /* MenuRouter.swift */,
+			);
+			name = Menu;
+			path = Kusuri/UI/Menu;
+			sourceTree = SOURCE_ROOT;
+		};
+		86BC56E9282777DD00A58841 /* UIParts */ = {
+			isa = PBXGroup;
+			children = (
+				86AA71D1282A968800A969D6 /* ModalPresentationWebView.swift */,
+				86BC56EB282777DD00A58841 /* IndicatorView.swift */,
+				86BC56ED282777DD00A58841 /* EmptyStateView.swift */,
+			);
+			path = UIParts;
+			sourceTree = "<group>";
+		};
+		86D5B86E283AFE3100C76218 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				868D41752827B9560045702A /* BarcodeReader.swift */,
+				86821A2F2826DC8E005ABBDD /* ActivityIndicator.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		86D5B871283B029A00C76218 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86AA71F2282A972300A969D6 /* DrugInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86D5B872283B02B000C76218 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				8661409928301A28004B1A94 /* SearchType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		9C2C080F1550107C0B7D7974 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				080990E516D7EFAE9136EDAD /* Pods-Kusuri.debug.xcconfig */,
+				643871CD3284E426CBA872F3 /* Pods-Kusuri.release.xcconfig */,
+				A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */,
+				FB886472EC7CBE977A54FF02 /* Pods-Kusuri-KusuriUITests.release.xcconfig */,
+				6C13AABB6EE0F61000709F21 /* Pods-KusuriTests.debug.xcconfig */,
+				6CE323C47C34F3B1A6EE1954 /* Pods-KusuriTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA5FE01E77AF85A9B75C3072 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8402451325C4E77047BF713 /* Pods_Kusuri.framework */,
+				6C3C3DB968E575C9190C2597 /* Pods_Kusuri_KusuriUITests.framework */,
+				BF6E7E9229C894C88C1F24B2 /* Pods_KusuriTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8676C5A02826C9180010CE7A /* Kusuri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8676C5CB2826C91B0010CE7A /* Build configuration list for PBXNativeTarget "Kusuri" */;
+			buildPhases = (
+				91DFC28C62450BF22D88862B /* [CP] Check Pods Manifest.lock */,
+				8676C59D2826C9180010CE7A /* Sources */,
+				8676C59E2826C9180010CE7A /* Frameworks */,
+				8676C59F2826C9180010CE7A /* Resources */,
+				0AAC9176DB15452FED002F05 /* [CP] Embed Pods Frameworks */,
+				868D417B2827CFF00045702A /* LicensePlist  */,
+				86D5B86C2839C8E000C76218 /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kusuri;
+			packageProductDependencies = (
+				86D5B8502839C66E00C76218 /* FirebaseAnalytics */,
+				86D5B8522839C66E00C76218 /* FirebaseAnalyticsSwift */,
+				86D5B8542839C66E00C76218 /* FirebaseAuth */,
+				86D5B8562839C66E00C76218 /* FirebaseCrashlytics */,
+				86D5B8582839C66E00C76218 /* FirebaseFirestore */,
+				86D5B85A2839C66E00C76218 /* FirebaseFirestoreSwift */,
+				86D5B85C2839C66E00C76218 /* FirebaseFunctions */,
+				86D5B85E2839C66E00C76218 /* FirebaseInstallations */,
+				86D5B8602839C66E00C76218 /* FirebaseMessaging */,
+				86D5B8622839C66E00C76218 /* FirebasePerformance */,
+				86D5B8642839C66E00C76218 /* FirebaseRemoteConfig */,
+				86D5B8662839C66E00C76218 /* FirebaseRemoteConfigSwift */,
+				86D5B8682839C66E00C76218 /* FirebaseStorage */,
+			);
+			productName = Kusuri;
+			productReference = 8676C5A12826C9180010CE7A /* Kusuri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8676C5B62826C91B0010CE7A /* KusuriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8676C5CE2826C91B0010CE7A /* Build configuration list for PBXNativeTarget "KusuriTests" */;
+			buildPhases = (
+				5E90E29893F66ABF402CB7C0 /* [CP] Check Pods Manifest.lock */,
+				8676C5B32826C91B0010CE7A /* Sources */,
+				8676C5B42826C91B0010CE7A /* Frameworks */,
+				8676C5B52826C91B0010CE7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8676C5B92826C91B0010CE7A /* PBXTargetDependency */,
+			);
+			name = KusuriTests;
+			productName = KusuriTests;
+			productReference = 8676C5B72826C91B0010CE7A /* KusuriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8676C5C02826C91B0010CE7A /* KusuriUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8676C5D12826C91B0010CE7A /* Build configuration list for PBXNativeTarget "KusuriUITests" */;
+			buildPhases = (
+				AF3AD6303451C567571395E2 /* [CP] Check Pods Manifest.lock */,
+				8676C5BD2826C91B0010CE7A /* Sources */,
+				8676C5BE2826C91B0010CE7A /* Frameworks */,
+				8676C5BF2826C91B0010CE7A /* Resources */,
+				4EDDA891AA39A3D94A205C78 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8676C5C32826C91B0010CE7A /* PBXTargetDependency */,
+			);
+			name = KusuriUITests;
+			productName = KusuriUITests;
+			productReference = 8676C5C12826C91B0010CE7A /* KusuriUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8676C5992826C9180010CE7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8676C5A02826C9180010CE7A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					8676C5B62826C91B0010CE7A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8676C5A02826C9180010CE7A;
+					};
+					8676C5C02826C91B0010CE7A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 8676C5A02826C9180010CE7A;
+					};
+				};
+			};
+			buildConfigurationList = 8676C59C2826C9180010CE7A /* Build configuration list for PBXProject "Kusuri" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8676C5982826C9180010CE7A;
+			packageReferences = (
+				86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 8676C5A22826C9180010CE7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8676C5A02826C9180010CE7A /* Kusuri */,
+				8676C5B62826C91B0010CE7A /* KusuriTests */,
+				8676C5C02826C91B0010CE7A /* KusuriUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8676C59F2826C9180010CE7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868D41782827CA740045702A /* Mintfile in Resources */,
+				8676C5B12826C91A0010CE7A /* LaunchScreen.storyboard in Resources */,
+				86D5B84E2839C2C300C76218 /* GoogleService-Info-debug.plist in Resources */,
+				868D416C2827A9B60045702A /* NotoSansJP-Bold.otf in Resources */,
+				868D416B2827A9B60045702A /* NotoSansJP-Light.otf in Resources */,
+				8676C5AE2826C91A0010CE7A /* Assets.xcassets in Resources */,
+				868D417D2827F4300045702A /* Colors.xcassets in Resources */,
+				86D5B86B2839C74E00C76218 /* GoogleService-Info.plist in Resources */,
+				868D416A2827A9B60045702A /* NotoSansJP-Regular.otf in Resources */,
+				868D417A2827CE6E0045702A /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8676C5B52826C91B0010CE7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8676C5BF2826C91B0010CE7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AAC9176DB15452FED002F05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusuri/Pods-Kusuri-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusuri/Pods-Kusuri-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kusuri/Pods-Kusuri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EDDA891AA39A3D94A205C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kusuri-KusuriUITests/Pods-Kusuri-KusuriUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E90E29893F66ABF402CB7C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KusuriTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868D417B2827CFF00045702A /* LicensePlist  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "LicensePlist ";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION = \"Debug\" ]; then\nmint run mono0926/LicensePlist --output-path Settings.bundle\nfi\n";
+		};
+		86D5B86C2839C8E000C76218 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		91DFC28C62450BF22D88862B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kusuri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF3AD6303451C567571395E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kusuri-KusuriUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8676C59D2826C9180010CE7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86AA71E8282A968900A969D6 /* DrugSearchViewController.swift in Sources */,
+				86821A382826DCC6005ABBDD /* Date.swift in Sources */,
+				868D41762827B9560045702A /* BarcodeReader.swift in Sources */,
+				864B7436282D59E500B57B99 /* UITraitCollection.swift in Sources */,
+				86AA71E5282A968900A969D6 /* DrugSearchRouter.swift in Sources */,
+				86BC56F2282777DD00A58841 /* EmptyStateView.swift in Sources */,
+				86BC56E52827742900A58841 /* MenuRouter.swift in Sources */,
+				86821A392826DCC6005ABBDD /* UIColor.swift in Sources */,
+				868D41742827B8C70045702A /* BarcodeReadRouter.swift in Sources */,
+				86821A3A2826DCC6005ABBDD /* NSObject.swift in Sources */,
+				86821A3B2826DCC6005ABBDD /* ActivityIndicator.swift in Sources */,
+				8661409A28301A28004B1A94 /* SearchType.swift in Sources */,
+				86821A3C2826DCC6005ABBDD /* UIDevice.swift in Sources */,
+				86BC56DE2826EEC600A58841 /* MainTabViewController.swift in Sources */,
+				86AA71FD282A972300A969D6 /* DrugInfoAPI.swift in Sources */,
+				86AA71E2282A968900A969D6 /* SearchPageTabViewModel.swift in Sources */,
+				86821A3D2826DCC6005ABBDD /* UITextField.swift in Sources */,
+				86BC56E72827742900A58841 /* MenuSectionModel.swift in Sources */,
+				86821A3E2826DCC6005ABBDD /* UITableViewCell.swift in Sources */,
+				86821A3F2826DCC6005ABBDD /* String.swift in Sources */,
+				86AC576128427E75007C0E07 /* TargetType.swift in Sources */,
+				86821A402826DCC6005ABBDD /* UIImage.swift in Sources */,
+				86AA71FC282A972300A969D6 /* DrugInfo.swift in Sources */,
+				86BC56F0282777DD00A58841 /* IndicatorView.swift in Sources */,
+				86BC56DD2826EEC600A58841 /* MainTabViewModel.swift in Sources */,
+				86AA71DE282A968900A969D6 /* ModalPresentationWebView.swift in Sources */,
+				868D41732827B8C70045702A /* BarcodeReadViewModel.swift in Sources */,
+				868D41722827B8C70045702A /* BarcodeReadViewController.swift in Sources */,
+				86821A412826DCC6005ABBDD /* UIFont.swift in Sources */,
+				86AA71E1282A968900A969D6 /* SearchPageTabViewController.swift in Sources */,
+				86AA71E3282A968900A969D6 /* SearchPageTabRouter.swift in Sources */,
+				86BC56E82827742900A58841 /* MenuViewController.swift in Sources */,
+				86AC576A284373A1007C0E07 /* OtcDrugHtmlParser.swift in Sources */,
+				86821A422826DCC6005ABBDD /* UIControl.swift in Sources */,
+				86AA71E6282A968900A969D6 /* DrugSearchViewModel.swift in Sources */,
+				86AC5763284324AD007C0E07 /* GetMedicalDrugInfo.swift in Sources */,
+				86BC56E62827742900A58841 /* MenuViewModel.swift in Sources */,
+				86AA71E7282A968900A969D6 /* DrugInfoCell.swift in Sources */,
+				8676C5A52826C9180010CE7A /* AppDelegate.swift in Sources */,
+				86BC56DF2826EEC600A58841 /* MainTabRouter.swift in Sources */,
+				86AC576528432708007C0E07 /* GetOtcDrugInfo.swift in Sources */,
+				86AC576C28437613007C0E07 /* APIConstants.swift in Sources */,
+				86AA71FB282A972300A969D6 /* DrugInfoEntity.swift in Sources */,
+				86AC576828436932007C0E07 /* MedicalDrugHtmlParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8676C5B32826C91B0010CE7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8676C5BC2826C91B0010CE7A /* KusuriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8676C5BD2826C91B0010CE7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8676C5C62826C91B0010CE7A /* KusuriUITests.swift in Sources */,
+				8676C5C82826C91B0010CE7A /* KusuriUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8676C5B92826C91B0010CE7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8676C5A02826C9180010CE7A /* Kusuri */;
+			targetProxy = 8676C5B82826C91B0010CE7A /* PBXContainerItemProxy */;
+		};
+		8676C5C32826C91B0010CE7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8676C5A02826C9180010CE7A /* Kusuri */;
+			targetProxy = 8676C5C22826C91B0010CE7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8676C5AF2826C91A0010CE7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8676C5B02826C91A0010CE7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8676C5C92826C91B0010CE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8676C5CA2826C91B0010CE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8676C5CC2826C91B0010CE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080990E516D7EFAE9136EDAD /* Pods-Kusuri.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X399MB9G5U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kusuri/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "添付文書";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "バーコードの読み取りにカメラの使用を許可してください。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真にアクセスします。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusinoue.kusuri.debug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Kusuri Debug";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8676C5CD2826C91B0010CE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643871CD3284E426CBA872F3 /* Pods-Kusuri.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X399MB9G5U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kusuri/Resource/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "添付文書";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "バーコードの読み取りにカメラの使用を許可してください。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "写真にアクセスします。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusinoue.kusuri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Kusuri Release";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8676C5CF2826C91B0010CE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C13AABB6EE0F61000709F21 /* Pods-KusuriTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59R7C3NM48;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusinoue.KusuriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kusuri.app/Kusuri";
+			};
+			name = Debug;
+		};
+		8676C5D02826C91B0010CE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE323C47C34F3B1A6EE1954 /* Pods-KusuriTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59R7C3NM48;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusinoue.KusuriTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kusuri.app/Kusuri";
+			};
+			name = Release;
+		};
+		8676C5D22826C91B0010CE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4F87D3655DACA85F502802C /* Pods-Kusuri-KusuriUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59R7C3NM48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusinoue.KusuriUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kusuri;
+			};
+			name = Debug;
+		};
+		8676C5D32826C91B0010CE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB886472EC7CBE977A54FF02 /* Pods-Kusuri-KusuriUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59R7C3NM48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusinoue.KusuriUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kusuri;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8676C59C2826C9180010CE7A /* Build configuration list for PBXProject "Kusuri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8676C5C92826C91B0010CE7A /* Debug */,
+				8676C5CA2826C91B0010CE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8676C5CB2826C91B0010CE7A /* Build configuration list for PBXNativeTarget "Kusuri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8676C5CC2826C91B0010CE7A /* Debug */,
+				8676C5CD2826C91B0010CE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8676C5CE2826C91B0010CE7A /* Build configuration list for PBXNativeTarget "KusuriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8676C5CF2826C91B0010CE7A /* Debug */,
+				8676C5D02826C91B0010CE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8676C5D12826C91B0010CE7A /* Build configuration list for PBXNativeTarget "KusuriUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8676C5D22826C91B0010CE7A /* Debug */,
+				8676C5D32826C91B0010CE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86D5B8502839C66E00C76218 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		86D5B8522839C66E00C76218 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		86D5B8542839C66E00C76218 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		86D5B8562839C66E00C76218 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		86D5B8582839C66E00C76218 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		86D5B85A2839C66E00C76218 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		86D5B85C2839C66E00C76218 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		86D5B85E2839C66E00C76218 /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		86D5B8602839C66E00C76218 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		86D5B8622839C66E00C76218 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		86D5B8642839C66E00C76218 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		86D5B8662839C66E00C76218 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		86D5B8682839C66E00C76218 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D5B84F2839C66D00C76218 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8676C5992826C9180010CE7A /* Project object */;
+}
