@@ -6,6 +6,7 @@
 //
 
 import UIKit.UIViewController
+import StoreKit
 
 final class BarcodeReadRouter {
     private unowned let view: UIViewController
@@ -27,14 +28,32 @@ final class BarcodeReadRouter {
     }
     
     func showWebView(title: String , url: String) {
-        guard let url = URL(string: url) else { return }
+        guard let url = URL(string: url) else {
+            return
+        }
         let webView = ModalPresentationWebView(title: title, url: url)
+        webView.delegate = self
         webView.modalPresentationStyle = .fullScreen
         view.present(webView, animated: true, completion: nil)
     }
     
     func showSetting() {
-        guard let settingsURL = URL(string: UIApplication.openSettingsURLString ) else { return }
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString ) else {
+            return
+        }
         UIApplication.shared.open(settingsURL, options: [:], completionHandler: nil)
+    }
+}
+
+extension BarcodeReadRouter: ModalPresentationWebViewDelegate {
+    func dissmiss() {
+        Configuration.drugInfoImpressions += 1
+        
+        if Configuration.drugInfoImpressions % 5 == 0 && Configuration.reviewPopDidShown == false {
+            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                SKStoreReviewController.requestReview(in: scene)
+                Configuration.reviewPopDidShown = true
+            }
+        }
     }
 }

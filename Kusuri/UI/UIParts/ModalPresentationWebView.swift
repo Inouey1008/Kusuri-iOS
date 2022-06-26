@@ -10,9 +10,15 @@ import WebKit
 import SnapKit
 import RxSwift
 
+protocol ModalPresentationWebViewDelegate {
+    func dissmiss()
+}
+
 final class ModalPresentationWebView: UIViewController, WKUIDelegate, WKNavigationDelegate {
     private let url: URL
     private var webView: WKWebView!
+    
+    var delegate: ModalPresentationWebViewDelegate?
     
     private let headerView: UIView = {
         let view = UIView()
@@ -36,7 +42,11 @@ final class ModalPresentationWebView: UIViewController, WKUIDelegate, WKNavigati
         button.contentHorizontalAlignment = .fill
         button.contentVerticalAlignment = .fill
         button.addAction(for: .touchUpInside, { [weak self] in
-            self?.dismiss(animated: true, completion: nil)
+            guard let self = self else { return }
+            
+            self.dismiss(animated: true, completion: {
+                self.delegate?.dissmiss()
+            })
         })
         return button
     }()
