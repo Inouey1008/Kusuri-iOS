@@ -50,7 +50,7 @@ final class BarcodeReadViewController: UIViewController {
     
     private let discriptionLabel1: UILabel = {
         let label = UILabel()
-        label.text = "バーコードを撮影枠内に映してください"
+        label.text = UIDevice.current.separateValue(forPad: "バーコードを撮影枠内に映してください", forPhone: "バーコードを撮影枠内に\n映してください")
         label.textColor = .weakText
         label.font = .largeRegular
         label.backgroundColor = .clear
@@ -61,7 +61,7 @@ final class BarcodeReadViewController: UIViewController {
     
     private let discriptionLabel2: UILabel = {
         let label = UILabel()
-        label.text = "読み取りが成功すると、添付文書を閲覧できます"
+        label.text = UIDevice.current.separateValue(forPad: "読み取りが成功すると、添付文書を閲覧できます", forPhone: "読み取りが成功すると\n添付文書を閲覧できます")
         label.textColor = .weakText
         label.font = .mediumLight
         label.backgroundColor = .clear
@@ -176,9 +176,9 @@ final class BarcodeReadViewController: UIViewController {
         view.layer.masksToBounds = true
         view.addSubview(previewArea)
         view.addSubview(descriptionArea)
-        view.addSubview(cameraSettingView)
         view.layer.addSublayer(previewLayer)
         previewLayer.addSublayer(textLayer)
+        view.addSubview(cameraSettingView)  // !! UI仕様の都合、一番最後にAddSubViewすること
         
         descriptionArea.addSubview(captureDiscriptionStackView)
         captureDiscriptionStackView.addArrangedSubview(discriptionLabel1)
@@ -322,7 +322,7 @@ final class BarcodeReadViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        NotificationCenter.default.rx.notification(UIApplication.didBecomeActiveNotification)
+        UIApplication.rx.didBecomeActive
             .subscribe(with: self, onNext: { Object, _ in
                 Object.cameraSettingView.isHidden = AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized
             })
