@@ -41,10 +41,10 @@ extension DrugSearchRouter: ModalPresentationWebViewDelegate {
     func dissmiss() {
         Configuration.drugInfoImpressions += 1
         
-        if Configuration.drugInfoImpressions % 5 == 0 && Configuration.reviewPopDidShown == false {
+        if Configuration.drugInfoImpressions % 5 == 0 && Configuration.reviewPopupDidShown == false {
             if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
                 SKStoreReviewController.requestReview(in: scene)
-                Configuration.reviewPopDidShown = true
+                Configuration.reviewPopupDidShown = true
             }
         }
     }

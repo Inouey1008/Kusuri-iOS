@@ -13,7 +13,7 @@ final class Configuration {
         UserDefaults.standard.register(
             defaults: [
                 "DrugInfoImpressions": 0,
-                "ReviewPopDidShown": false,
+                "ReviewPopupDidShown": false,
                 "FirstLaunch": false,
             ]
         )
@@ -28,12 +28,12 @@ final class Configuration {
         }
     }
     
-    static var reviewPopDidShown: Bool {
+    static var reviewPopupDidShown: Bool {
         get {
-            return UserDefaults.standard.bool(forKey: "ReviewPopDidShown")
+            return UserDefaults.standard.bool(forKey: "ReviewPopupDidShown")
         }
         set {
-            UserDefaults.standard.setValue(newValue, forKey: "ReviewPopDidShown")
+            UserDefaults.standard.setValue(newValue, forKey: "ReviewPopupDidShown")
         }
     }
     
