@@ -27,7 +27,9 @@ final class MenuRouter {
     }
     
     func showWebView(title: String , url: String) {
-        guard let url = URL(string: url) else { return }
+        guard let url = URL(string: url) else {
+            return
+        }
         let webView = ModalPresentationWebView(title: title, url: url)
         webView.modalPresentationStyle = .fullScreen
         view.present(webView, animated: true, completion: nil)
