@@ -82,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func setupWindow() {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = MainTabRouter.generate()
+        window?.rootViewController = RootViewController()
         window?.makeKeyAndVisible()
     }
     

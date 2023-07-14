@@ -14,7 +14,7 @@ final class Configuration {
             defaults: [
                 "DrugInfoImpressions": 0,
                 "ReviewPopupDidShown": false,
-                "FirstLaunch": false,
+                "FirstLaunch": true,
             ]
         )
     }
