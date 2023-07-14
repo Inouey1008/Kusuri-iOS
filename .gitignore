@@ -94,3 +94,15 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+
+# LicensePlist
+# https://github.com/mono0926/LicensePlist
+
+Kusuri/Settings.bundle/
+
+
+# Firebase
+
+*/GoogleService-Info.plist
+*/GoogleService-Info-debug.plist

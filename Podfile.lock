@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.5.0)
   - Differentiator (5.0.0)
+  - LicensePlist (3.24.10)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -13,16 +14,19 @@ PODS:
   - RxSwift (6.5.0)
   - Siren (6.0.1)
   - SnapKit (5.0.1)
+  - SwiftGifOrigin (1.7.0)
   - SwiftSoup (2.4.2)
   - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - LicensePlist
   - RxCocoa (= 6.5.0)
   - RxDataSources (~> 5.0)
   - RxSwift (= 6.5.0)
   - Siren
   - SnapKit
+  - SwiftGifOrigin
   - SwiftSoup
   - XLPagerTabStrip
 
@@ -30,27 +34,31 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Differentiator
+    - LicensePlist
     - RxCocoa
     - RxDataSources
     - RxRelay
     - RxSwift
     - Siren
     - SnapKit
+    - SwiftGifOrigin
     - SwiftSoup
     - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  LicensePlist: 2e5c975314d2d2ee35cec141d57cc482d61b93c9
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   Siren: 6d53701a9aa6c9f52b533e652d0ddb6086309b3d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
   SwiftSoup: 7589ceac3b38cef742a96981cfe2b14ba55ce1e3
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: 0c9faf9b333779838f722585824a4173aa023dfd
+PODFILE CHECKSUM: b2dc5c4c085717c2632069e765e1fdfc89c7f916
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

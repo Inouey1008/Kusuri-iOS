@@ -13,6 +13,8 @@ target 'Kusuri' do
   pod 'Siren'
   pod 'Alamofire'
   pod 'SwiftSoup'
+  pod 'SwiftGifOrigin'
+  pod 'LicensePlist'
   
   # Pods for Kusuri
 
