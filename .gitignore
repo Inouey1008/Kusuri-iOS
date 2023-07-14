@@ -104,5 +104,4 @@ Kusuri/Settings.bundle/
 
 # Firebase
 
-*/GoogleService-Info.plist
-*/GoogleService-Info-debug.plist
+**/GoogleService-Info*.plist

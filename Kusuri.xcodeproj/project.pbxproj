@@ -636,10 +636,10 @@
 			};
 			buildConfigurationList = 8676C59C2826C9180010CE7A /* Build configuration list for PBXProject "Kusuri" */;
 			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = en;
+			developmentRegion = ja;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				ja,
 				Base,
 			);
 			mainGroup = 8676C5982826C9180010CE7A;
@@ -1057,7 +1057,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = X399MB9G5U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kusuri/Resource/Info.plist;
@@ -1096,7 +1096,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = X399MB9G5U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kusuri/Resource/Info.plist;
